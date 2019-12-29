@@ -1,5 +1,4 @@
 ﻿using VagrantStory.Core;
-using VagrantStory.Database;
 
 namespace VagrantStory.Items
 {

@@ -1,9 +1,9 @@
 ﻿using MyBox;
 using System;
 using UnityEngine;
+using Utils;
 using VagrantStory.Core;
 using VagrantStory.Database;
-using Utils;
 
 namespace VagrantStory.Component
 {
@@ -65,7 +65,11 @@ namespace VagrantStory.Component
             if (material != MaterialsDB.eMaterials.None)
             {
                 statistics += MaterialsDB.List[(int)material].statistics;
-                if (_material != (int)material) reloadModel = true;
+                if (_material != (int)material)
+                {
+                    reloadModel = true;
+                }
+
                 _material = (int)material;
             }
 
@@ -188,7 +192,7 @@ namespace VagrantStory.Component
 
                 RefreshGemSlots();
             }
-            else if (category == Enums.eBladeCategory.AXE || category == Enums.eBladeCategory.MACE || category == Enums.eBladeCategory.GREAT_AXE 
+            else if (category == Enums.eBladeCategory.AXE || category == Enums.eBladeCategory.MACE || category == Enums.eBladeCategory.GREAT_AXE
                 || category == Enums.eBladeCategory.STAFF || category == Enums.eBladeCategory.HEAVY_MACE)
             {
                 gripType = Enums.eGripCategory.Grip;

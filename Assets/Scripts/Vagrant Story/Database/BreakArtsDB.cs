@@ -1,5 +1,4 @@
 ﻿using VagrantStory.Core;
-using VagrantStory.Items;
 
 // https://gamefaqs.gamespot.com/ps/914326-vagrant-story/faqs/29828
 // http://chrysaliswiki.com/ability:attacks-of-vagrant-story#toc6
@@ -49,7 +48,7 @@ namespace VagrantStory.Database
         public static BreakArt Glacial_Gale = new BreakArt("Glacial Gale", "Numbs foe with a damaging strike", Enums.eBladeCategory.AXEANDMACE, 40, new Enums.eAffinity[] { Enums.eAffinity.AIR }, Enums.eDamageType.BLUNT, 1,
             new BreakArtEffect[] { new BreakArtEffect(BreakArtEffect.Target.TARGET, BreakArtEffect.Type.ADD_STATUS, BreakArtEffect.Status.Numbness) });
         public static BreakArt Killer_Mantis = new BreakArt("A blinding rush damages and saps MP from foe", "breakart_desc", Enums.eBladeCategory.AXEANDMACE, 55, new Enums.eAffinity[] { Enums.eAffinity.NONE }, Enums.eDamageType.EDGED, 1,
-            new BreakArtEffect[] { new BreakArtEffect(BreakArtEffect.Target.TARGET, BreakArtEffect.Type.MODIFIER, BreakArtEffect.Mod.MP, -50) } ); // TODO : INT based MP damage
+            new BreakArtEffect[] { new BreakArtEffect(BreakArtEffect.Target.TARGET, BreakArtEffect.Type.MODIFIER, BreakArtEffect.Mod.MP, -50) }); // TODO : INT based MP damage
         public static BreakArt Black_Nebula = new BreakArt("Black Nebula", "Blasts foe with a burst of negative energy", Enums.eBladeCategory.AXEANDMACE, 75, new Enums.eAffinity[] { Enums.eAffinity.DARK }, Enums.eDamageType.BLUNT);
 
         //Francisque

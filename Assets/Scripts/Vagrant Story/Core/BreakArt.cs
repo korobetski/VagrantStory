@@ -1,8 +1,4 @@
-﻿using UnityEngine;
-using VagrantStory.Items;
-using VagrantStory.Database;
-
-namespace VagrantStory.Core
+﻿namespace VagrantStory.Core
 {
     public class BreakArt
     {

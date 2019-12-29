@@ -1,8 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-
-namespace VagrantStory.Core
+﻿namespace VagrantStory.Core
 {
     public class Enums
     {

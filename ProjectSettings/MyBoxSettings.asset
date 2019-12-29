@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &1
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 61
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d9574cd9fd624c47b731e243b62972c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _autoSaveEnabled: 1
-  _cleanEmptyDirectoriesFeature: 1
-  _prepareOnPlaymode: 1
-  _checkForUpdates: 1
+  _autoSaveEnabled: 0
+  _cleanEmptyDirectoriesFeature: 0
+  _prepareOnPlaymode: 0
+  _checkForUpdates: 0
