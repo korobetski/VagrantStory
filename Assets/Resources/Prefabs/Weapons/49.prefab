@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &655521008958089199
+--- !u!1 &1653096655447224511
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,9 +8,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2063416787431359768}
-  - component: {fileID: 1314147825246442561}
-  - component: {fileID: -8500889016899746470}
+  - component: {fileID: 2883558161740837968}
+  - component: {fileID: 2878906961009347452}
+  - component: {fileID: 6003822627624026459}
   m_Layer: 0
   m_Name: 49
   m_TagString: Weapon
@@ -18,13 +18,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2063416787431359768
+--- !u!4 &2883558161740837968
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655521008958089199}
+  m_GameObject: {fileID: 1653096655447224511}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,21 +32,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1314147825246442561
+--- !u!33 &2878906961009347452
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655521008958089199}
-  m_Mesh: {fileID: 420057582193926321}
---- !u!23 &-8500889016899746470
+  m_GameObject: {fileID: 1653096655447224511}
+  m_Mesh: {fileID: -2592164127897109959}
+--- !u!23 &6003822627624026459
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655521008958089199}
+  m_GameObject: {fileID: 1653096655447224511}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -178171816007821910}
+  - {fileID: -8762080473529745340}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -79,7 +79,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!21 &-178171816007821910
+--- !u!21 &-8762080473529745340
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -119,7 +119,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 6354423720514409234}
+        m_Texture: {fileID: 5201267763335873883}
         m_Scale: {x: 0.5, y: -0.25}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -154,7 +154,7 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
---- !u!43 &420057582193926321
+--- !u!43 &-2592164127897109959
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -317,7 +317,7 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!28 &6354423720514409234
+--- !u!28 &5201267763335873883
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

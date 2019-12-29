@@ -3,9 +3,8 @@
 
     public class CombatTech
     {
-        public enum CombatTechType { ATTACK, DEFENSE };
         public string name;
         public string description;
-        public CombatTechType type;
+        public Enums.eCombatTechType type;
     }
 }

@@ -1,29 +1,25 @@
 ﻿using VagrantStory.Core;
+using VagrantStory.Database;
 
 namespace VagrantStory.Items
 {
     public class Blade : Item
     {
-
-        public enum BladeType { NONE = 0, DAGGER = 1, SWORD = 2, GREAT_SWORD = 3, AXE = 4, MACE = 5, GREAT_AXE = 6, STAFF = 7, HEAVY_MACE = 8, POLEARM = 9, CROSSBOW = 10 };
-        public enum DamageType { NONE, BLUNT, EDGED, PIERCING };
-
-
-        public BladeType bladeType;
-        public SmithMaterial material;
-        public DamageType damageType; // Main damage type
+        public Enums.eBladeCategory bladeType;
+        public Enums.eMaterial material;
+        public Enums.eDamageType damageType; // Main damage type
         public Statistics statistics;
         public byte id;
-        public byte wepID;
+        public byte wepID; // 3d model ref
         public byte range;
         public byte risk;
 
 
-        private BladeType[] bladeTypes = { BladeType.NONE, BladeType.DAGGER, BladeType.SWORD, BladeType.GREAT_SWORD, BladeType.AXE,
-            BladeType.MACE, BladeType.GREAT_AXE, BladeType.STAFF, BladeType.HEAVY_MACE, BladeType.POLEARM, BladeType.CROSSBOW };
-        private DamageType[] damageTypes = { DamageType.NONE, DamageType.BLUNT, DamageType.EDGED, DamageType.PIERCING };
+        private Enums.eBladeCategory[] bladeTypes = { Enums.eBladeCategory.NONE, Enums.eBladeCategory.DAGGER, Enums.eBladeCategory.SWORD, Enums.eBladeCategory.GREAT_SWORD, Enums.eBladeCategory.AXE,
+            Enums.eBladeCategory.MACE, Enums.eBladeCategory.GREAT_AXE, Enums.eBladeCategory.STAFF, Enums.eBladeCategory.HEAVY_MACE, Enums.eBladeCategory.POLEARM, Enums.eBladeCategory.CROSSBOW };
+        private Enums.eDamageType[] damageTypes = { Enums.eDamageType.NONE, Enums.eDamageType.BLUNT, Enums.eDamageType.EDGED, Enums.eDamageType.PIERCING };
 
-        public Blade(BladeType t)
+        public Blade(Enums.eBladeCategory t)
         {
             bladeType = t;
             statistics = new Statistics();

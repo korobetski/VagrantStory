@@ -3,16 +3,15 @@
 
     public class SmithMaterial
     {
-        public enum SmithMaterialType { NONE = 0, WOOD = 1, LEATHER = 2, BRONZE = 3, IRON = 4, HAGANE = 5, SILVER = 6, DAMASCUS = 7 }
         // Bois - Cuir - Etain - Fer - Hagane - Argent - Damascus
         public string name = "";
-        public SmithMaterialType type;
+        public Enums.eMaterial type;
         public Statistics statistics;
 
 
 
-        private SmithMaterialType[] types = { SmithMaterialType.NONE, SmithMaterialType.WOOD, SmithMaterialType.LEATHER, SmithMaterialType.BRONZE,
-            SmithMaterialType.IRON, SmithMaterialType.HAGANE, SmithMaterialType.SILVER, SmithMaterialType.DAMASCUS };
+        private Enums.eMaterial[] types = { Enums.eMaterial.NONE, Enums.eMaterial.WOOD, Enums.eMaterial.LEATHER, Enums.eMaterial.BRONZE,
+            Enums.eMaterial.IRON, Enums.eMaterial.HAGANE, Enums.eMaterial.SILVER, Enums.eMaterial.DAMASCUS };
 
         public SmithMaterial(string na, byte t, short _h, short _b, short _u, short _p, short _d, short _e, short _phy, short _ai, short _fi, short _ea, short _wa, short _li, short _da, short _str, short _int, short _agi)
         {

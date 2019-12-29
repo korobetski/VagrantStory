@@ -4,26 +4,6 @@ namespace VagrantStory.Database
 {
     public class ArmorsDB
     {
-        public enum eShields
-        {
-            None = 0,
-            Buckler_Shield = 1,
-            Hoplite_Shield,
-            Round_Shield,
-            Targe_Shield,
-            Quad_Shield,
-            Tower_Shield,
-            Oval_Shield,
-            Pelta_Shield,
-            Circle_Shield,
-            Heater_Shield,
-            Spiked_Shield,
-            Kite_Shield,
-            Casserole_Shield,
-            Jazeraint_Shield,
-            Dread_Shield,
-            Knight_Shield
-        };
 
 
         #region SHIELDS

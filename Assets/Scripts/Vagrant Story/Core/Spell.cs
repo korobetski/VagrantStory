@@ -3,13 +3,11 @@
 
 namespace VagrantStory.Core
 {
-    public class Spell : MonoBehaviour
+    public class Spell
     {
-        public enum SpellCategory { SHAMAN, ENCHANTER, WARLOCK, SORCERER, OTHER };
-
-        //public string name = "";
+        public string name = "";
         public string description = "";
-        public SpellCategory category;
+        public Enums.eSpellCategory category;
         public uint cost; // MP cost of the spell
         public BreakArtEffect effect;
 
