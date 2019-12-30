@@ -133,7 +133,7 @@ public class AshleyController : MonoBehaviour
 
         Vector3 localMovementDirection = new Vector3(m_Movement.x, 0f, m_Movement.y).normalized;
 
-        if (hitGround.distance <= 1.55f)
+        if (hitGround.distance <= 1.56f)
         {
             _jumping = false;
             _verticalForce = 0;

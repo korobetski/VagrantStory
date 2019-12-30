@@ -75,7 +75,7 @@ public class PlayerInfos : MonoBehaviour
                 weaponGO = MainHand.GameObject;
                 weaponGO.transform.parent = WeaponRootTransfrom;
                 weaponGO.transform.localPosition = Vector3.zero;
-                weaponGO.transform.localRotation = new Quaternion();
+                weaponGO.transform.localRotation = Quaternion.Euler(180, 180, 0);
                 weaponGO.transform.localScale = Vector3.one;
                 animator.SetInteger("Weapon Type", (int)MainHand.blade.bladeType);
                 animator.SetLayerWeight(0, 0f);
