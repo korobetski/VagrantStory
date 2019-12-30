@@ -1,6 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-using VagrantStory.Core;
+﻿using VagrantStory.Core;
 //https://datacrystal.romhacking.net/wiki/Vagrant_Story:rooms_list
 namespace VagrantStory.Database
 {
@@ -20,8 +18,8 @@ namespace VagrantStory.Database
         public static Map Z1M11 = new Map(9, 19, 11, Enums.eZone.Wine_Cellar, "A Laborer's Thirst");
         public static Map Z1M12 = new Map(9, 20, 12, Enums.eZone.Wine_Cellar, "The Rich Drown in Wine");
         public static Map Z1M13 = new Map(9, 21, 13, Enums.eZone.Wine_Cellar, "Room of Rotten Grapes");
-        public static Map Z1M13B = new Map(9, 22, 14, Enums.eZone.Wine_Cellar, "");
-        public static Map Z1M14B = new Map(9, 23, 15, Enums.eZone.Wine_Cellar, "");
+        public static Map Z1M13B = new Map(9, 22, 14, Enums.eZone.Wine_Cellar, "Wine Cellar: Chamber of Fear (after the quake)");
+        public static Map Z1M14B = new Map(9, 23, 15, Enums.eZone.Wine_Cellar, "Ashley and Merlose at the Wine Cellar gate");
         public static Map Z1M14 = new Map(9, 24, 16, Enums.eZone.Wine_Cellar, "The Greedy One's Den");
         public static Map Z1M15 = new Map(9, 27, 17, Enums.eZone.Wine_Cellar, "Worker's Breakroom");
         public static Map Z1M16 = new Map(9, 409, 18, Enums.eZone.Wine_Cellar, "Blackmarket of Wines");

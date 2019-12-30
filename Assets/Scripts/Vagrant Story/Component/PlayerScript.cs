@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.AI;
 
 public class PlayerScript : MonoBehaviour
 {
@@ -10,7 +8,6 @@ public class PlayerScript : MonoBehaviour
     public float gravity = 5f;
 
     private Vector3 moveDirection = Vector3.zero;
-    private float m_GroundCheckDistance = 0.1f;
 
     void Start()
     {
@@ -19,7 +16,7 @@ public class PlayerScript : MonoBehaviour
 
     void Update()
     {
-        
+
         Vector3 sol = transform.position - new Vector3(0, 1.63f);
         Vector3 pieds = transform.position - new Vector3(0, 1.4f);
         Vector3 genoux = transform.position - new Vector3(0, 0.6f);
@@ -43,21 +40,68 @@ public class PlayerScript : MonoBehaviour
         bool bHaut = Physics.Raycast(haut, transform.TransformDirection(Vector3.forward), out hitHaut, Mathf.Infinity);
 
 
-        if (bGround) Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hitGround.distance, Color.black);
-        else Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
-        if (bSol) Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * hitSol.distance, Color.green);
-        else Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bPieds) Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * hitPieds.distance, Color.yellow);
-        else Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bGenoux) Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * hitGenoux.distance, Color.magenta);
-        else Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bCorps) Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitCorps.distance, Color.red);
-        else Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bTete) Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * hitTete.distance, Color.cyan);
-        else Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bHaut) Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * hitHaut.distance, Color.blue);
-        else Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        
+        if (bGround)
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hitGround.distance, Color.black);
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
+        }
+
+        if (bSol)
+        {
+            Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * hitSol.distance, Color.green);
+        }
+        else
+        {
+            Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bPieds)
+        {
+            Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * hitPieds.distance, Color.yellow);
+        }
+        else
+        {
+            Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bGenoux)
+        {
+            Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * hitGenoux.distance, Color.magenta);
+        }
+        else
+        {
+            Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bCorps)
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitCorps.distance, Color.red);
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bTete)
+        {
+            Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * hitTete.distance, Color.cyan);
+        }
+        else
+        {
+            Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bHaut)
+        {
+            Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * hitHaut.distance, Color.blue);
+        }
+        else
+        {
+            Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
 
         if (hitGenoux.distance > 0.5f || !bGenoux)
         {
@@ -68,10 +112,11 @@ public class PlayerScript : MonoBehaviour
         {
             animator.SetBool("Suspendu", false);
             animator.SetBool("Grounded", true);
-        } else
+        }
+        else
         {
             animator.SetBool("Grounded", false);
-            moveDirection.y -= gravity*Time.deltaTime;
+            moveDirection.y -= gravity * Time.deltaTime;
         }
 
 
@@ -101,7 +146,8 @@ public class PlayerScript : MonoBehaviour
                 {
                     moveDirection.y += 4f;
                 }
-            } else
+            }
+            else
             {
                 moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
                 moveDirection *= speed;
@@ -125,7 +171,7 @@ public class PlayerScript : MonoBehaviour
 
             if (Input.GetButton("Jump"))
             {
-                moveDirection.y = jumpSpeed*10*Time.deltaTime;
+                moveDirection.y = jumpSpeed * 10 * Time.deltaTime;
                 animator.SetBool("Grounded", false);
             }
 
@@ -140,7 +186,8 @@ public class PlayerScript : MonoBehaviour
             else if (Input.GetAxis("Vertical") < 0 && Input.GetAxis("Horizontal") > 0)
             {
                 transform.localRotation = Quaternion.Euler(0, 135, 0);
-            } else if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") < 0)
+            }
+            else if (Input.GetAxis("Vertical") > 0 && Input.GetAxis("Horizontal") < 0)
             {
                 transform.localRotation = Quaternion.Euler(0, 315, 0);
             }
@@ -170,7 +217,7 @@ public class PlayerScript : MonoBehaviour
 
 
 
-        if(Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
         {
             animator.SetTrigger("Attack");
         }

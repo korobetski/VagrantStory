@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-
-
-namespace VagrantStory.Core
+﻿namespace VagrantStory.Core
 {
 
     public class Map

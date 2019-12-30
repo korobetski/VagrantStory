@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 [RequireComponent(typeof(Animator))]
@@ -32,7 +30,7 @@ public class AshleyController : MonoBehaviour
     void Update()
     {
         m_Movement.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        Debug.DrawRay(transform.position, new Vector3(m_Movement.x, 0, m_Movement.y)*10, Color.white);
+        Debug.DrawRay(transform.position, new Vector3(m_Movement.x, 0, m_Movement.y) * 10, Color.white);
         m_Camera.Set(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
         m_Jump = Input.GetButton("Jump");
 
@@ -68,20 +66,68 @@ public class AshleyController : MonoBehaviour
         bool bHaut = Physics.Raycast(haut, transform.TransformDirection(Vector3.forward), out hitHaut, Mathf.Infinity);
 
 
-        if (bGround) Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hitGround.distance, Color.black);
-        else Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
-        if (bSol) Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * hitSol.distance, Color.green);
-        else Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bPieds) Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * hitPieds.distance, Color.yellow);
-        else Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bGenoux) Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * hitGenoux.distance, Color.magenta);
-        else Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bCorps) Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitCorps.distance, Color.red);
-        else Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bTete) Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * hitTete.distance, Color.cyan);
-        else Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
-        if (bHaut) Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * hitHaut.distance, Color.blue);
-        else Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        if (bGround)
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * hitGround.distance, Color.black);
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.down) * 1000, Color.white);
+        }
+
+        if (bSol)
+        {
+            Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * hitSol.distance, Color.green);
+        }
+        else
+        {
+            Debug.DrawRay(sol, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bPieds)
+        {
+            Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * hitPieds.distance, Color.yellow);
+        }
+        else
+        {
+            Debug.DrawRay(pieds, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bGenoux)
+        {
+            Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * hitGenoux.distance, Color.magenta);
+        }
+        else
+        {
+            Debug.DrawRay(genoux, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bCorps)
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * hitCorps.distance, Color.red);
+        }
+        else
+        {
+            Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bTete)
+        {
+            Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * hitTete.distance, Color.cyan);
+        }
+        else
+        {
+            Debug.DrawRay(tete, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
+
+        if (bHaut)
+        {
+            Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * hitHaut.distance, Color.blue);
+        }
+        else
+        {
+            Debug.DrawRay(haut, transform.TransformDirection(Vector3.forward) * 1000, Color.white);
+        }
 
         //Debug.Log(hitGround.distance);
 
@@ -92,19 +138,20 @@ public class AshleyController : MonoBehaviour
             _jumping = false;
             _verticalForce = 0;
             _animator.SetBool("Grounded", true);
-        } else
+        }
+        else
         {
             // we apply gravity when we arn't grounded
-            _rigidBody.AddForce(Vector3.down * Mathf.Pow(Physics.gravity.y*0.8f, 2), ForceMode.Acceleration);
+            _rigidBody.AddForce(Vector3.down * Mathf.Pow(Physics.gravity.y * 0.8f, 2), ForceMode.Acceleration);
             _animator.SetBool("Grounded", false);
         }
-        
+
         if (m_Jump && !_jumping)
         {
             _animator.SetTrigger("Jumping");
             _jumping = true;
             _rigidBody.AddForce(Vector3.up * jumpSpeed, ForceMode.VelocityChange);
-            _rigidBody.AddForce(localMovementDirection * jumpSpeed*2, ForceMode.Impulse);
+            _rigidBody.AddForce(localMovementDirection * jumpSpeed * 2, ForceMode.Impulse);
         }
 
 

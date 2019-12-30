@@ -42,8 +42,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a74190c8146f441b089bcd0a12df4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gravity: 5
   jumpSpeed: 15
+--- !u!114 &5640554798452023227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644464907977601107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18784cc7e1317e94497b510094e8a4d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 250
+  MaxHP: 250
+  MP: 100
+  MaxMP: 100
+  Risk: 0
+  MaxRisk: 100
+  Map: Map009
+  BattleMode: 0
+  WeaponRootTransfrom: {fileID: 7331121224823718265}
+  HeadStatus: 0
+  BodyStatus: 0
+  RightArmStatus: 0
+  LeftArmStatus: 0
+  LegsStatus: 0
+  Inventory: []
 --- !u!1001 &5707928804541789125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171,6 +197,12 @@ PrefabInstance:
 --- !u!1 &7644464907977601107 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2675203417401410454, guid: 45b8258420d830542a010d6740842af1,
+    type: 3}
+  m_PrefabInstance: {fileID: 5707928804541789125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7331121224823718265 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3065822044837851836, guid: 45b8258420d830542a010d6740842af1,
     type: 3}
   m_PrefabInstance: {fileID: 5707928804541789125}
   m_PrefabAsset: {fileID: 0}

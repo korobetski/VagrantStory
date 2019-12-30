@@ -1,0 +1,1495 @@
+fileFormatVersion: 2
+guid: 6f7f8d84b17f51946b9b213be9f8cbd9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6254297760207580503
+    second: WellHead
+  - first:
+      213: -6096943904503745444
+    second: WellBody
+  - first:
+      213: -4881522474723965491
+    second: WellBatModeRightArm
+  - first:
+      213: -3136191753912981775
+    second: WellComModeRightArm
+  - first:
+      213: -8282589288570261001
+    second: WellBatModeLeftArm
+  - first:
+      213: 8846700899548309647
+    second: WellComModeLeftArm
+  - first:
+      213: -4597620732801974739
+    second: WellLegs
+  - first:
+      213: 4837226827468654209
+    second: PerfectHead
+  - first:
+      213: 564683412660304873
+    second: PerfectBody
+  - first:
+      213: -2860173712404914824
+    second: PerfectBatModeRightArm
+  - first:
+      213: -4396739844049854336
+    second: PerfectComModeRightArm
+  - first:
+      213: -3573561190734148984
+    second: PerfectLegs
+  - first:
+      213: 7554682246017851183
+    second: PerfectComModeLeftArm
+  - first:
+      213: -526863367237500938
+    second: PerfectBatModeLeftArm
+  - first:
+      213: 5678423636758232983
+    second: DangerHead
+  - first:
+      213: -4168028052603585020
+    second: DangerBatModeRightArm
+  - first:
+      213: 1637320240669089884
+    second: Triangle
+  - first:
+      213: 2838681010091129302
+    second: Square
+  - first:
+      213: 7186223825358793108
+    second: Circle
+  - first:
+      213: 5289787804856440118
+    second: Cross
+  - first:
+      213: 3503342186671474929
+    second: DangerBody
+  - first:
+      213: 12820421401733513
+    second: DangerComModeLeftArm
+  - first:
+      213: 5921306475311553427
+    second: DangerLegs
+  - first:
+      213: -7103322597468152536
+    second: DangerBatModeLeftArm
+  - first:
+      213: -5170076785903863149
+    second: DangerComModeRightArm
+  - first:
+      213: -9070127681113844985
+    second: MediumHead
+  - first:
+      213: 7129141737421035466
+    second: MediumBody
+  - first:
+      213: -35846531273604433
+    second: MediumLegs
+  - first:
+      213: 5862554372670569650
+    second: MediumComModeLeftArm
+  - first:
+      213: 9209962601380238645
+    second: MediumBatModeLeftArm
+  - first:
+      213: -929012050032615218
+    second: MediumBatModeRightArm
+  - first:
+      213: -9144373170495341518
+    second: MediumComModeRightArm
+  - first:
+      213: 8517714636281420771
+    second: Accessory
+  - first:
+      213: -2978653956524333172
+    second: icons_0
+  - first:
+      213: -3315287088158993630
+    second: Gloves
+  - first:
+      213: 4161028708796736728
+    second: Boots
+  - first:
+      213: 6094746334361814630
+    second: Armor
+  - first:
+      213: -1521757208159615135
+    second: Helm
+  - first:
+      213: -4765851570883655592
+    second: Shield
+  - first:
+      213: 1506177856002552958
+    second: Crossbow
+  - first:
+      213: -3920132243780884839
+    second: Pole
+  - first:
+      213: -8530823994618642475
+    second: Grip
+  - first:
+      213: 5184663955158131182
+    second: Guard
+  - first:
+      213: 2571145893064675767
+    second: Herb
+  - first:
+      213: -1888774750914703165
+    second: Potion
+  - first:
+      213: -4226175373378118020
+    second: Gem
+  - first:
+      213: -7798774717832287345
+    second: Food
+  - first:
+      213: 9198678579800050646
+    second: Key
+  - first:
+      213: -3510146843992586703
+    second: Dagger
+  - first:
+      213: -2313266835999037447
+    second: Spear
+  - first:
+      213: -1327247425645525364
+    second: Axe
+  - first:
+      213: -9159766296806664910
+    second: GreatAxe
+  - first:
+      213: -1879306598302859882
+    second: Sword
+  - first:
+      213: -7531558038391537600
+    second: GreatSword
+  - first:
+      213: 8759871349884944488
+    second: Staff
+  - first:
+      213: -6759049477965372836
+    second: Mace
+  - first:
+      213: 4712655722964586049
+    second: HeavyMace
+  - first:
+      213: -4819520670167334924
+    second: Bolt
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WellHead
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 790
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30507bf5ce9be4a479c4914c6c22e8cb
+      internalID: -6254297760207580503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WellBody
+      rect:
+        serializedVersion: 2
+        x: 1793
+        y: 775
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f320e9000edc31e4a9f643f11bd715c2
+      internalID: -6096943904503745444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WellBatModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 781
+        width: 18
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd90faccd3195445ae8273de329bffc
+      internalID: -4881522474723965491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WellComModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 757
+        width: 9
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2962d0d9efe0474793c20cebd697822
+      internalID: -3136191753912981775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WellBatModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 754
+        width: 12
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cadbc54447d8ee40880967b4ec835f6
+      internalID: -8282589288570261001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WellComModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 782
+        width: 9
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02d16a040474684580514d7abe923f2
+      internalID: 8846700899548309647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WellLegs
+      rect:
+        serializedVersion: 2
+        x: 1837
+        y: 776
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3532d7791f489db43afc9e5d93bf0870
+      internalID: -4597620732801974739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectHead
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 790
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c625dde5f3ec904c9c66010b1ee8ae1
+      internalID: 4837226827468654209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectBody
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 775
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5e67476884b244283aadd2e409cd55
+      internalID: 564683412660304873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectBatModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 781
+        width: 18
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f68a7b59fa08262448d7accdba3443e1
+      internalID: -2860173712404914824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectComModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 757
+        width: 9
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52a95307fb82284a8e6d39825c439e3
+      internalID: -4396739844049854336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectLegs
+      rect:
+        serializedVersion: 2
+        x: 813
+        y: 776
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00ca2d4d5af84646b49f5a74deb39c8
+      internalID: -3573561190734148984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectComModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 782
+        width: 9
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1268bee6c80024946b71567436d242ad
+      internalID: 7554682246017851183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PerfectBatModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 754
+        width: 12
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5375ea1c10bdad41bf2206812e732fb
+      internalID: -526863367237500938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerHead
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 310
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ed9f4063ff8654b8b898bdc73c3e36
+      internalID: 5678423636758232983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerBatModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 301
+        width: 18
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c506f4454dd1d24f90f9e857f62cca5
+      internalID: -4168028052603585020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Triangle
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 337
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff88d0a4772d10468122eb500531931
+      internalID: 1637320240669089884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 337
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7090954b12c9aa40ac783c1c53b9593
+      internalID: 2838681010091129302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Circle
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 337
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20a5fe475e2c856429f859571448dfff
+      internalID: 7186223825358793108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cross
+      rect:
+        serializedVersion: 2
+        x: 1073
+        y: 337
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb7ce496bf8ee54e9ef6f5efd3efe85
+      internalID: 5289787804856440118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerBody
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 295
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59818938fa222ea4ab0fcb830f6e502d
+      internalID: 3503342186671474929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerComModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 302
+        width: 9
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea72cba48cef69439c4290eb0991b08
+      internalID: 12820421401733513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerLegs
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 296
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b79161c12a1edd4799b1d6f77f8f32c
+      internalID: 5921306475311553427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerBatModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 274
+        width: 12
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ced8b627da094148a66cd421092ae27
+      internalID: -7103322597468152536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DangerComModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 277
+        width: 9
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedf470e22d1f3d4c9af055e3f2288b3
+      internalID: -5170076785903863149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumHead
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 790
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f90c0ad7777ea14db48d9d854e95ec4
+      internalID: -9070127681113844985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumBody
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 775
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8b44802e2c49cb4c97b15d09d23ceee
+      internalID: 7129141737421035466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumLegs
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 776
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c50b9e93f54a60449917e7180ad510c
+      internalID: -35846531273604433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumComModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 782
+        width: 9
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b69114cf6a57a41a780608d8b11407
+      internalID: 5862554372670569650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumBatModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 754
+        width: 12
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 400cea10fbaff114aa692faa2f33a7d8
+      internalID: 9209962601380238645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumBatModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 781
+        width: 18
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c6eafdb6f5f3e4cbbddbfd93e12788
+      internalID: -929012050032615218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MediumComModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 757
+        width: 9
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25a827723d79a934a811232a188b22c4
+      internalID: -9144373170495341518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Accessory
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9107c3d5828749541b5ceefa6c1ab80f
+      internalID: 8517714636281420771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: icons_0
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28005a2daa7ed8642b5057dba94581ad
+      internalID: -2978653956524333172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gloves
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4618049334fc7848ba4acf03dcfb3ee
+      internalID: -3315287088158993630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boots
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 105e4e01a65cb9b4088afc68b863596c
+      internalID: 4161028708796736728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b9184f8a8e8dc4a913a920cc2696ba
+      internalID: 6094746334361814630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Helm
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0279f921c146af345a953617021e8bf2
+      internalID: -1521757208159615135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shield
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 151229faf2fc0ad4687955c66de5c24b
+      internalID: -4765851570883655592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Crossbow
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b890f36a8edf58e49a6031995b1840e1
+      internalID: 1506177856002552958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pole
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1787c88d85f9f40bf6751dbac49e72
+      internalID: -3920132243780884839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grip
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dda86a3f4412b8c41a68fdd32c2153ab
+      internalID: -8530823994618642475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Guard
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 352
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843c85b496c0d5647a9feadd3c2fe986
+      internalID: 5184663955158131182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Herb
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c6f8cddc0f026409f98d47d2def601
+      internalID: 2571145893064675767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Potion
+      rect:
+        serializedVersion: 2
+        x: 1552
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4065dd24c0e7fcf4c994a0fff17afe8c
+      internalID: -1888774750914703165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gem
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5372a12dd45ad6845ae9c069191734a5
+      internalID: -4226175373378118020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Food
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398eff51fec7a6c49b9193eeb874f9ae
+      internalID: -7798774717832287345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Key
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9f488892959414f8dc7087282d39e1
+      internalID: 9198678579800050646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dagger
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2a789bdc122d6469a479f560092206
+      internalID: -3510146843992586703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spear
+      rect:
+        serializedVersion: 2
+        x: 1632
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28231c51b3a8e4545b1bb40c4226ecdd
+      internalID: -2313266835999037447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Axe
+      rect:
+        serializedVersion: 2
+        x: 1648
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2f7aa32614ecd745b05eb03bf20ee2d
+      internalID: -1327247425645525364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatAxe
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452ac96df73ebc64da3a141ccff0e9ea
+      internalID: -9159766296806664910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce5299f4227eb6a45997dcae88e6b914
+      internalID: -1879306598302859882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GreatSword
+      rect:
+        serializedVersion: 2
+        x: 1696
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3695b6a7b4bcc46468026f44565a66e0
+      internalID: -7531558038391537600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Staff
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddd01d2455f00a14d9903f629b025cc1
+      internalID: 8759871349884944488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mace
+      rect:
+        serializedVersion: 2
+        x: 1728
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6eb5b67a88c00d49b3fc163f2e09ea4
+      internalID: -6759049477965372836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HeavyMace
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e642eb8a6a71f154b9bb3d623bc5a640
+      internalID: 4712655722964586049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bolt
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 368
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bdaee450c5fb7a449863419f7ce3669
+      internalID: -4819520670167334924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ec90be9e2bcd9624b95eb91c959a9199
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
