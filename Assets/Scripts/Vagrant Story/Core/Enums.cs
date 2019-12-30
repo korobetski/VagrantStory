@@ -183,6 +183,41 @@
             Tertia, Lancer, Arturos, Braveheart, Hellraiser, Nightkiller, Manabreaker, Powerfist,
             Brainshield, Speedster, Silent_Queen, Dark_Queen, Death_Queen, White_Queen,
         };
+
+
+        public enum eZone
+        {
+            None,
+            Wine_Cellar,
+            Catacombs,
+            Sanctum,
+            Abandoned_Mines_B1,
+            Abandoned_Mines_B2,
+            Limestone_Quarry,
+            Templ_of_Kiltia,
+            Great_Cathedral_B1,
+            Great_Cathedral_L1,
+            Great_Cathedral_L2,
+            Great_Cathedral_L3,
+            Great_Cathedral_L4,
+            Forgotten_Pathway,
+            Escapeway,
+            Iron_Maiden_B1,
+            Iron_Maiden_B2,
+            Iron_Maiden_B3,
+            Undercity_West = 19,
+            Undercity_East,
+            The_Keep,
+            City_Walls_West,
+            City_Walls_South,
+            City_Walls_East,
+            City_Walls_North,
+            Snowfly_Forest,
+            Snowfly_Forest_East,
+            Town_Center_West,
+            Town_Center_South,
+            Town_Center_East
+        }
     }
 
 }
