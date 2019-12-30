@@ -3,6 +3,7 @@
 namespace VagrantStory.Component
 {
     [RequireComponent(typeof(BoxCollider))]
+    [RequireComponent(typeof(Rigidbody))]
     public class FloatingStone : MonoBehaviour
     {
         public Vector3 startingPosition;
