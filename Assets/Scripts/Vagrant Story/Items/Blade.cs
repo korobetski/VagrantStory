@@ -1,4 +1,5 @@
 ﻿using VagrantStory.Core;
+using VagrantStory.Database;
 
 namespace VagrantStory.Items
 {
@@ -42,6 +43,17 @@ namespace VagrantStory.Items
 
             this.range = range;
 
+        }
+
+        public void SetMaterial(Enums.eMaterial mat)
+        {
+            if (material != Enums.eMaterial.NONE)
+            {
+                statistics -= MaterialsDB.List[(int)material].statistics;
+            }
+
+            material = mat;
+            statistics += MaterialsDB.List[(int)mat].statistics;
         }
     }
 }

@@ -10,13 +10,13 @@ namespace VagrantStory.Core
         public PlayerInfos playerInfos;
 
 
-        public Sprite FullHead;
-        public Sprite FullBody;
-        public Sprite FullBatModeRightArm;
-        public Sprite FullBatModeLeftArm;
-        public Sprite FullComModeRightArm;
-        public Sprite FullComModeLeftArm;
-        public Sprite FullLegs;
+        public Sprite ExcellentHead;
+        public Sprite ExcellentBody;
+        public Sprite ExcellentBatModeRightArm;
+        public Sprite ExcellentBatModeLeftArm;
+        public Sprite ExcellentComModeRightArm;
+        public Sprite ExcellentComModeLeftArm;
+        public Sprite ExcellentLegs;
 
         public Sprite WellHead;
         public Sprite WellBody;
@@ -26,21 +26,29 @@ namespace VagrantStory.Core
         public Sprite WellComModeLeftArm;
         public Sprite WellLegs;
 
-        public Sprite MediumHead;
-        public Sprite MediumBody;
-        public Sprite MediumBatModeRightArm;
-        public Sprite MediumBatModeLeftArm;
-        public Sprite MediumComModeRightArm;
-        public Sprite MediumComModeLeftArm;
-        public Sprite MediumLegs;
+        public Sprite AverageHead;
+        public Sprite AverageBody;
+        public Sprite AverageBatModeRightArm;
+        public Sprite AverageBatModeLeftArm;
+        public Sprite AverageComModeRightArm;
+        public Sprite AverageComModeLeftArm;
+        public Sprite AverageLegs;
 
-        public Sprite DangerHead;
-        public Sprite DangerBody;
-        public Sprite DangerBatModeRightArm;
-        public Sprite DangerBatModeLeftArm;
-        public Sprite DangerComModeRightArm;
-        public Sprite DangerComModeLeftArm;
-        public Sprite DangerLegs;
+        public Sprite BadHead;
+        public Sprite BadBody;
+        public Sprite BadBatModeRightArm;
+        public Sprite BadBatModeLeftArm;
+        public Sprite BadComModeRightArm;
+        public Sprite BadComModeLeftArm;
+        public Sprite BadLegs;
+
+        public Sprite DeadHead;
+        public Sprite DeadBody;
+        public Sprite DeadBatModeRightArm;
+        public Sprite DeadBatModeLeftArm;
+        public Sprite DeadComModeRightArm;
+        public Sprite DeadComModeLeftArm;
+        public Sprite DeadLegs;
 
 
         private Slider uiHP;
@@ -82,89 +90,106 @@ namespace VagrantStory.Core
 
             switch (playerInfos.HeadStatus)
             {
-                case PlayerInfos.BodyPartStatus.PERFECT:
-                    _head.GetComponent<SpriteRenderer>().sprite = FullHead;
+                case Enums.eBodyPartStatus.Excellent:
+                    _head.GetComponent<SpriteRenderer>().sprite = ExcellentHead;
                     break;
-                case PlayerInfos.BodyPartStatus.WELL:
+                case Enums.eBodyPartStatus.Good:
                     _head.GetComponent<SpriteRenderer>().sprite = WellHead;
                     break;
-                case PlayerInfos.BodyPartStatus.MEDIUM:
-                    _head.GetComponent<SpriteRenderer>().sprite = MediumHead;
+                case Enums.eBodyPartStatus.Average:
+                    _head.GetComponent<SpriteRenderer>().sprite = AverageHead;
                     break;
-                case PlayerInfos.BodyPartStatus.DANGER:
-                    _head.GetComponent<SpriteRenderer>().sprite = DangerHead;
+                case Enums.eBodyPartStatus.Bad:
+                    _head.GetComponent<SpriteRenderer>().sprite = BadHead;
+                    break;
+                case Enums.eBodyPartStatus.Dying:
+                    _head.GetComponent<SpriteRenderer>().sprite = DeadHead;
                     break;
             }
 
             switch (playerInfos.BodyStatus)
             {
-                case PlayerInfos.BodyPartStatus.PERFECT:
-                    _body.GetComponent<SpriteRenderer>().sprite = FullBody;
+                case Enums.eBodyPartStatus.Excellent:
+                    _body.GetComponent<SpriteRenderer>().sprite = ExcellentBody;
                     break;
-                case PlayerInfos.BodyPartStatus.WELL:
+                case Enums.eBodyPartStatus.Good:
                     _body.GetComponent<SpriteRenderer>().sprite = WellBody;
                     break;
-                case PlayerInfos.BodyPartStatus.MEDIUM:
-                    _body.GetComponent<SpriteRenderer>().sprite = MediumBody;
+                case Enums.eBodyPartStatus.Average:
+                    _body.GetComponent<SpriteRenderer>().sprite = AverageBody;
                     break;
-                case PlayerInfos.BodyPartStatus.DANGER:
-                    _body.GetComponent<SpriteRenderer>().sprite = DangerBody;
+                case Enums.eBodyPartStatus.Bad:
+                    _body.GetComponent<SpriteRenderer>().sprite = BadBody;
+                    break;
+                case Enums.eBodyPartStatus.Dying:
+                    _body.GetComponent<SpriteRenderer>().sprite = DeadBody;
                     break;
             }
 
             switch (playerInfos.RightArmStatus)
             {
-                case PlayerInfos.BodyPartStatus.PERFECT:
-                    BatModeRightArm = FullBatModeRightArm;
-                    ComModeRightArm = FullComModeRightArm;
+                case Enums.eBodyPartStatus.Excellent:
+                    BatModeRightArm = ExcellentBatModeRightArm;
+                    ComModeRightArm = ExcellentComModeRightArm;
                     break;
-                case PlayerInfos.BodyPartStatus.WELL:
+                case Enums.eBodyPartStatus.Good:
                     BatModeRightArm = WellBatModeRightArm;
                     ComModeRightArm = WellComModeRightArm;
                     break;
-                case PlayerInfos.BodyPartStatus.MEDIUM:
-                    BatModeRightArm = MediumBatModeRightArm;
-                    ComModeRightArm = MediumComModeRightArm;
+                case Enums.eBodyPartStatus.Average:
+                    BatModeRightArm = AverageBatModeRightArm;
+                    ComModeRightArm = AverageComModeRightArm;
                     break;
-                case PlayerInfos.BodyPartStatus.DANGER:
-                    BatModeRightArm = DangerBatModeRightArm;
-                    ComModeRightArm = DangerComModeRightArm;
+                case Enums.eBodyPartStatus.Bad:
+                    BatModeRightArm = BadBatModeRightArm;
+                    ComModeRightArm = BadComModeRightArm;
+                    break;
+                case Enums.eBodyPartStatus.Dying:
+                    BatModeRightArm = DeadBatModeRightArm;
+                    ComModeRightArm = DeadComModeRightArm;
                     break;
             }
 
             switch (playerInfos.LeftArmStatus)
             {
-                case PlayerInfos.BodyPartStatus.PERFECT:
-                    BatModeLeftArm = FullBatModeLeftArm;
-                    ComModeLeftArm = FullComModeLeftArm;
+                case Enums.eBodyPartStatus.Excellent:
+                    BatModeLeftArm = ExcellentBatModeLeftArm;
+                    ComModeLeftArm = ExcellentComModeLeftArm;
                     break;
-                case PlayerInfos.BodyPartStatus.WELL:
+                case Enums.eBodyPartStatus.Good:
                     BatModeLeftArm = WellBatModeLeftArm;
                     ComModeLeftArm = WellComModeLeftArm;
                     break;
-                case PlayerInfos.BodyPartStatus.MEDIUM:
-                    BatModeLeftArm = MediumBatModeLeftArm;
-                    ComModeLeftArm = MediumComModeLeftArm;
+                case Enums.eBodyPartStatus.Average:
+                    BatModeLeftArm = AverageBatModeLeftArm;
+                    ComModeLeftArm = AverageComModeLeftArm;
                     break;
-                case PlayerInfos.BodyPartStatus.DANGER:
-                    BatModeLeftArm = DangerBatModeLeftArm;
-                    ComModeLeftArm = DangerComModeLeftArm;
+                case Enums.eBodyPartStatus.Bad:
+                    BatModeLeftArm = BadBatModeLeftArm;
+                    ComModeLeftArm = BadComModeLeftArm;
+                    break;
+                case Enums.eBodyPartStatus.Dying:
+                    BatModeLeftArm = DeadBatModeLeftArm;
+                    ComModeLeftArm = DeadComModeLeftArm;
                     break;
             }
 
             switch (playerInfos.LegsStatus)
             {
-                case PlayerInfos.BodyPartStatus.PERFECT:
-                    _legs.GetComponent<SpriteRenderer>().sprite = FullLegs;
+                case Enums.eBodyPartStatus.Excellent:
+                    _legs.GetComponent<SpriteRenderer>().sprite = ExcellentLegs;
                     break;
-                case PlayerInfos.BodyPartStatus.WELL:
+                case Enums.eBodyPartStatus.Good:
                     _legs.GetComponent<SpriteRenderer>().sprite = WellLegs;
                     break;
-                case PlayerInfos.BodyPartStatus.MEDIUM:
-                    _legs.GetComponent<SpriteRenderer>().sprite = MediumLegs;
+                case Enums.eBodyPartStatus.Average:
+                    _legs.GetComponent<SpriteRenderer>().sprite = AverageLegs;
                     break;
-                case PlayerInfos.BodyPartStatus.DANGER:
-                    _legs.GetComponent<SpriteRenderer>().sprite = DangerLegs;
+                case Enums.eBodyPartStatus.Bad:
+                    _legs.GetComponent<SpriteRenderer>().sprite = BadLegs;
+                    break;
+                case Enums.eBodyPartStatus.Dying:
+                    _legs.GetComponent<SpriteRenderer>().sprite = DeadLegs;
                     break;
             }
 

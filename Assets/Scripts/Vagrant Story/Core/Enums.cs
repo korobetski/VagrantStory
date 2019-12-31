@@ -13,6 +13,14 @@
         public enum eSpellCategory { NONE = 0, SHAMAN, ENCHANTER, WARLOCK, SORCERER, OTHER };
         public enum eCombatTechType { NONE = 0, ATTACK, DEFENSE };
 
+        /*
+        Excellent 100% Excellente condition.
+        Good 99% - 75% Satisfaisant.
+        Average 75% - 25% Blessé, soins requis.
+        Bad moins de 24% Blessures graves.
+        Dying moins de 2 HP Etat critique, aucune mobilité.
+        */
+        public enum eBodyPartStatus { Excellent, Good, Average, Bad, Dying }; // blue, green, yellow, red : 100% - 75% - 50% - 25% -0%
         public enum eDaggerBlade
         {
             None = 0,
@@ -149,7 +157,7 @@
         public enum eShield
         {
             None = 0,
-            Buckler_Shield = 1,
+            Buckler_Shield = 91,
             Hoplite_Shield,
             Round_Shield,
             Targe_Shield,
@@ -184,6 +192,42 @@
             Brainshield, Speedster, Silent_Queen, Dark_Queen, Death_Queen, White_Queen,
         };
 
+
+        public enum eArmorCategory { NONE, SHIELD, HELM, ARMOR, GLOVE, BOOTS, ACCESSORY };
+
+        public enum eHelm
+        {
+            None,
+            Bandana, Bear_Mask, Wizard_Hat, Bone_Helm, Chain_Coif, Spangenhelm, Cabasset, Sallet,
+            Barbut, Basinet, Armet, Close_Helm, Burgonet, Hoplite_Helm, Jazeraint_Helm, Dread_Helm
+        };
+        public enum eArmor
+        {
+            None,
+            Jerkin, Hauberk, Wizard_Robe, Cuirass, Banded_Mail, Ring_Mail, Chain_Mail, Breastplate,
+            Segementata, Scale_Armor, Brigandine, Plate_Mail, Fluted_Armor, Hoplite_Armor, Jazeraint_Armor, Dread_Armor
+        };
+        public enum eBoots
+        {
+            None,
+            Bandage, Sandals, Boots, Long_Boots, Light_Grieve, Ring_Leggings, Chain_Leggings, Fusskampf,
+            Poleyn, Jambeau, Missaglia, Plate_Leggings, Fluted_Leggings, Hoplite_Leggings, Jazeraint_Leggings, Dread_Leggings
+        };
+        public enum eGlove
+        {
+            None,
+            Buffle, Leather_Glove, Reinforced_Glove, Knuckles, Ring_Sleeve, Chain_Sleeve, Gauntlet, Vambrace,
+            Plate_Glove, Rondanche, Tilt_Glove, Freiturnier, Fluted_Glove, Hoplite_Glove, Jazeraint_Glove, Dread_Glove
+        };
+
+        public enum eAccessory
+        {
+            None,
+            Rood_Necklace, Rune_Earrings, Lionhead, Rusted_Nails, Sylphid_Ring, Marduk, Salamander_Ring, Tamulis_Tongue,
+            Gnome_Bracelet, Palolos_Ring, Undine_Bracelet, Talian_Ring, Agriass_Balm, Kadesh_Ring, Agrippas_Choker, Diadras_Earring,
+            Titans_Ring, Lau_Feis_Armlet, Swan_Song, Pushpaka, Edgars_Ring, Cross_Choker, Ghost_Hound, Beaded_Amulet, Dragonhead,
+            Faufnirs_Tear, Agaless_Chain, Balams_Ring, Ninja_Coif, Morgans_Nails, Marlenes_Ring
+        };
 
         public enum eZone
         {

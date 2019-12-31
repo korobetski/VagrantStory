@@ -24,5 +24,11 @@
             lhs.value += rhs.value;
             return lhs;
         }
+
+        public static Affinity operator -(Affinity lhs, Affinity rhs)
+        {
+            lhs.value -= rhs.value;
+            return lhs;
+        }
     }
 }

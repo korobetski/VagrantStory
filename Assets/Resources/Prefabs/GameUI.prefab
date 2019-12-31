@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2124868192433586258}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 100, y: -78, z: 0}
+  m_LocalPosition: {x: 99, y: -79, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 4723749564492263088}
@@ -70,16 +70,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4460121725579813615, guid: 7350461302fb1634bbfcef226116d819,
-    type: 3}
+  m_Sprite: {fileID: 564683412660304873, guid: 6f7f8d84b17f51946b9b213be9f8cbd9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.12, y: 0.12}
+  m_Size: {x: 0.09, y: 0.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &3990311934201526771
@@ -107,7 +106,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3990311934201526771}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 108, y: -64, z: 0}
+  m_LocalPosition: {x: 108, y: -66, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 4723749564492263088}
@@ -152,16 +151,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 3424691581588624278, guid: 7350461302fb1634bbfcef226116d819,
+  m_Sprite: {fileID: -526863367237500938, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.1, y: 0.2}
+  m_Size: {x: 0.12, y: 0.21}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4373670969016491469
@@ -234,16 +233,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1266864529292965048, guid: 7350461302fb1634bbfcef226116d819,
+  m_Sprite: {fileID: -3573561190734148984, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.28, y: 0.22}
+  m_Size: {x: 0.26, y: 0.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &4614345370098407998
@@ -311,7 +310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7169042827046521809}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 100, y: -60, z: 0}
+  m_LocalPosition: {x: 101, y: -59, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 4723749564492263088}
@@ -356,16 +355,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2659969028440756082, guid: 7350461302fb1634bbfcef226116d819,
+  m_Sprite: {fileID: 4837226827468654209, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.12, y: 0.12}
+  m_Size: {x: 0.11, y: 0.1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7833128505104471086
@@ -393,7 +392,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7833128505104471086}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 92, y: -66, z: 0}
+  m_LocalPosition: {x: 93, y: -67, z: 0}
   m_LocalScale: {x: 200, y: 200, z: 200}
   m_Children: []
   m_Father: {fileID: 4723749564492263088}
@@ -438,16 +437,16 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1669883564174814498, guid: 7350461302fb1634bbfcef226116d819,
+  m_Sprite: {fileID: -2860173712404914824, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.11, y: 0.21}
+  m_Size: {x: 0.18, y: 0.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8306534853709120811
@@ -989,18 +988,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInfos: {fileID: 0}
-  FullHead: {fileID: 4837226827468654209, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  ExcellentHead: {fileID: 4837226827468654209, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  FullBody: {fileID: 564683412660304873, guid: 6f7f8d84b17f51946b9b213be9f8cbd9, type: 3}
-  FullBatModeRightArm: {fileID: -2860173712404914824, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  ExcellentBody: {fileID: 564683412660304873, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  FullBatModeLeftArm: {fileID: -526863367237500938, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  ExcellentBatModeRightArm: {fileID: -2860173712404914824, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  FullComModeRightArm: {fileID: -4396739844049854336, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  ExcellentBatModeLeftArm: {fileID: -526863367237500938, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  FullComModeLeftArm: {fileID: 7554682246017851183, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  ExcellentComModeRightArm: {fileID: -4396739844049854336, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  FullLegs: {fileID: -3573561190734148984, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  ExcellentComModeLeftArm: {fileID: 7554682246017851183, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+    type: 3}
+  ExcellentLegs: {fileID: -3573561190734148984, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
   WellHead: {fileID: -6254297760207580503, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
@@ -1016,33 +1016,45 @@ MonoBehaviour:
     type: 3}
   WellLegs: {fileID: -4597620732801974739, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumHead: {fileID: -9070127681113844985, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageHead: {fileID: -6290378802907453528, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumBody: {fileID: 7129141737421035466, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageBody: {fileID: 2640899857716267191, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumBatModeRightArm: {fileID: -929012050032615218, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageBatModeRightArm: {fileID: 6785282818369122537, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumBatModeLeftArm: {fileID: 9209962601380238645, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageBatModeLeftArm: {fileID: -5349329115469058077, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumComModeRightArm: {fileID: -9144373170495341518, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageComModeRightArm: {fileID: -4416765494593337283, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumComModeLeftArm: {fileID: 5862554372670569650, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageComModeLeftArm: {fileID: -206408671690394142, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  MediumLegs: {fileID: -35846531273604433, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  AverageLegs: {fileID: -212384874880746116, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerHead: {fileID: 5678423636758232983, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  BadHead: {fileID: -9070127681113844985, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerBody: {fileID: 3503342186671474929, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  BadBody: {fileID: 7129141737421035466, guid: 6f7f8d84b17f51946b9b213be9f8cbd9, type: 3}
+  BadBatModeRightArm: {fileID: -929012050032615218, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerBatModeRightArm: {fileID: -4168028052603585020, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  BadBatModeLeftArm: {fileID: 9209962601380238645, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerBatModeLeftArm: {fileID: -7103322597468152536, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  BadComModeRightArm: {fileID: -9144373170495341518, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerComModeRightArm: {fileID: -5170076785903863149, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  BadComModeLeftArm: {fileID: 5862554372670569650, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerComModeLeftArm: {fileID: 12820421401733513, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  BadLegs: {fileID: -35846531273604433, guid: 6f7f8d84b17f51946b9b213be9f8cbd9, type: 3}
+  DeadHead: {fileID: 5678423636758232983, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
-  DangerLegs: {fileID: 5921306475311553427, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+  DeadBody: {fileID: 3503342186671474929, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+    type: 3}
+  DeadBatModeRightArm: {fileID: -4168028052603585020, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+    type: 3}
+  DeadBatModeLeftArm: {fileID: -7103322597468152536, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+    type: 3}
+  DeadComModeRightArm: {fileID: -5170076785903863149, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+    type: 3}
+  DeadComModeLeftArm: {fileID: 12820421401733513, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
+    type: 3}
+  DeadLegs: {fileID: 5921306475311553427, guid: 6f7f8d84b17f51946b9b213be9f8cbd9,
     type: 3}
 --- !u!1 &8306534854782274092
 GameObject:

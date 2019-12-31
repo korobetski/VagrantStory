@@ -142,7 +142,7 @@ public class AshleyController : MonoBehaviour
         else
         {
             // we apply gravity when we arn't grounded
-            _rigidBody.AddForce(Vector3.down * Mathf.Pow(Physics.gravity.y * 0.8f, 2), ForceMode.Acceleration);
+            _rigidBody.AddForce(Vector3.down * Mathf.Pow(Physics.gravity.y * 0.5f, 2), ForceMode.Acceleration);
             _animator.SetBool("Grounded", false);
         }
 

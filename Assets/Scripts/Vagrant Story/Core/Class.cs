@@ -18,5 +18,10 @@
             lhs.value += rhs.value;
             return lhs;
         }
+        public static Class operator -(Class lhs, Class rhs)
+        {
+            lhs.value -= rhs.value;
+            return lhs;
+        }
     }
 }

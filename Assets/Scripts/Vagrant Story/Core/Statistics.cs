@@ -522,5 +522,29 @@ namespace VagrantStory.Core
             lhs.AGI += rhs.AGI;
             return lhs;
         }
+
+        public static Statistics operator -(Statistics lhs, Statistics rhs)
+        {
+            lhs.HUMAN -= rhs.HUMAN;
+            lhs.BEAST -= rhs.BEAST;
+            lhs.UNDEAD -= rhs.UNDEAD;
+            lhs.PHANTOM -= rhs.PHANTOM;
+            lhs.DRAGON -= rhs.DRAGON;
+            lhs.EVIL -= rhs.EVIL;
+            lhs.PHYSICAL -= rhs.PHYSICAL;
+            lhs.AIR -= rhs.AIR;
+            lhs.FIRE -= rhs.FIRE;
+            lhs.EARTH -= rhs.EARTH;
+            lhs.WATER -= rhs.WATER;
+            lhs.LIGHT -= rhs.LIGHT;
+            lhs.DARK -= rhs.DARK;
+            lhs.BLUNT -= rhs.BLUNT;
+            lhs.EDGED -= rhs.EDGED;
+            lhs.PIERCING -= rhs.PIERCING;
+            lhs.STR -= rhs.STR;
+            lhs.INT -= rhs.INT;
+            lhs.AGI -= rhs.AGI;
+            return lhs;
+        }
     }
 }

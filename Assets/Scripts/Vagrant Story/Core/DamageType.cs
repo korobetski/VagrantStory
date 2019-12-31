@@ -16,5 +16,10 @@
             lhs.value += rhs.value;
             return lhs;
         }
+        public static DamageType operator -(DamageType lhs, DamageType rhs)
+        {
+            lhs.value -= rhs.value;
+            return lhs;
+        }
     }
 }

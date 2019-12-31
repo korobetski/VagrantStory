@@ -16,5 +16,10 @@
             lhs.value += rhs.value;
             return lhs;
         }
+        public static Attribute operator -(Attribute lhs, Attribute rhs)
+        {
+            lhs.value -= rhs.value;
+            return lhs;
+        }
     }
 }

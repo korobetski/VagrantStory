@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using VagrantStory.Core;
+using VagrantStory.Database;
 
 namespace VagrantStory.Items
 {
@@ -17,10 +18,9 @@ namespace VagrantStory.Items
         public ushort PP = 0;
         public ushort MaxPP = 0;
 
-        public Weapon(string _name, Blade _blade, Grip _grip, ushort _dp, ushort _pp, List<Gem> _gems = null)
+        public Weapon(string _name, Enums.eMaterial material, Blade _blade, Grip _grip, ushort _dp=100, ushort _pp=100, List<Gem> _gems = null)
         {
             gems = new List<Gem>();
-            statistics = new Statistics();
             name = _name;
             blade = _blade;
             grip = _grip;
@@ -29,22 +29,52 @@ namespace VagrantStory.Items
             DP = _dp;
             MaxPP = _pp;
             PP = 0;
+            blade.SetMaterial(material);
+        }
 
-            statistics += blade.statistics;
-            statistics += grip.statistics;
-            foreach (Gem gem in gems)
-            {
-                statistics += gem.statistics;
-            }
+        public Weapon(string _name, Enums.eMaterial material, Armor _shield, ushort _dp = 100, ushort _pp = 100, List<Gem> _gems = null)
+        {
+            gems = new List<Gem>();
+            name = _name;
+            blade = new Blade(Enums.eBladeCategory.SHIELD);
+            blade.wepID = _shield.wepID;
+            blade.SetMaterial(material);
+            grip = GripsDB.List[0]; // null :D
+            MaxDP = _dp;
+            DP = _dp;
+            MaxPP = _pp;
+            PP = 0;
         }
 
         public GameObject GameObject
         {
             get
             {
-                return GameObject.Instantiate<GameObject>(Resources.Load<GameObject>(string.Concat("Prefabs/Weapons/", BitConverter.ToString(new byte[] { blade.wepID }))));
+                string wepPath = string.Concat("Prefabs/Weapons/", BitConverter.ToString(new byte[] { blade.wepID }));
+                //Debug.Log(string.Concat("Instantiate : ", wepPath));
+                return GameObject.Instantiate<GameObject>(Resources.Load<GameObject>(wepPath));
             }
         }
+
+        public void SetMaterial(Enums.eMaterial mat)
+        {
+            blade.SetMaterial(mat);
+            RefreshStats();
+        }
+
+        public void RefreshStats()
+        {
+
+            statistics = new Statistics();
+            statistics += blade.statistics;
+            statistics += grip.statistics;
+            foreach (Gem gem in gems)
+            {
+                statistics += gem.statistics;
+            }
+
+        }
+
     }
 
 }

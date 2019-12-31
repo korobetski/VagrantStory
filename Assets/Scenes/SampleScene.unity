@@ -128,12 +128,83 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2110714643247509116}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 238911705}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 18784cc7e1317e94497b510094e8a4d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &238911705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7644464907977601107, guid: 9777962fff510ee46a8f8e90dc28c983,
+    type: 3}
+  m_PrefabInstance: {fileID: 2110714643247509116}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &238911713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 238911705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2d61c12cc867b4a83a8088b74ef78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: 1
+  category: 11
+  dagger: 0
+  sword: 0
+  greatSword: 0
+  axe: 0
+  mace: 0
+  greatAxe: 0
+  staff: 0
+  heavyMace: 0
+  polearm: 0
+  crossbow: 0
+  shield: 91
+  gripType: 0
+  guard: 0
+  grip: 0
+  pole: 0
+  bolt: 0
+  gemSlot: 0
+  gemSlot1: 0
+  gemSlot2: 0
+  gemSlot3: 0
+  gem1: 0
+  gem2: 0
+  gem3: 0
+  PP: 100
+  DP: 100
+  statistics:
+    STRValue: 10
+    INTValue: 11
+    AGIValue: -1
+    HUMANValue: 0
+    BEASTValue: 0
+    UNDEADValue: 0
+    PHANTOMValue: 0
+    DRAGONValue: 0
+    EVILValue: 0
+    PHYSICALValue: 6
+    AIRValue: -1
+    FIREValue: 13
+    EARTHValue: 7
+    WATERValue: -7
+    LIGHTValue: -9
+    DARKValue: -9
+    BLUNTValue: 0
+    EDGEDValue: 0
+    PIERCINGValue: 0
+--- !u!4 &375626306 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9125198549531718463, guid: 9777962fff510ee46a8f8e90dc28c983,
+    type: 3}
+  m_PrefabInstance: {fileID: 2110714643247509116}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &638946656
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155,6 +226,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306534854383378097, guid: 50162a35f2c107b43b89450bc6358e4b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -80.5
       objectReference: {fileID: 0}
     - target: {fileID: 8306534854514295948, guid: 50162a35f2c107b43b89450bc6358e4b,
         type: 3}
@@ -300,6 +376,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8306534855669422537, guid: 50162a35f2c107b43b89450bc6358e4b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -80.5
       objectReference: {fileID: 0}
     - target: {fileID: 8306534855681773964, guid: 50162a35f2c107b43b89450bc6358e4b,
         type: 3}
@@ -1060,6 +1141,76 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -2.1060376
       objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: Helm
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: BodyArmor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: LeftGlove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: RightGlove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: Boots
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: Accessory
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: LeftArmStatus
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5640554798452023227, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: ShieldRootTransfrom
+      value: 
+      objectReference: {fileID: 375626306}
+    - target: {fileID: 5689070366142685790, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: sword
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689070366142685790, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: statistics.STRValue
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689070366142685790, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: statistics.AGIValue
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689070366142685790, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: guard
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689070366142685790, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: statistics.EDGEDValue
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5689070366142685790, guid: 9777962fff510ee46a8f8e90dc28c983,
+        type: 3}
+      propertyPath: statistics.PIERCINGValue
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6254265201711899983, guid: 9777962fff510ee46a8f8e90dc28c983,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1222,4 +1373,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7587810908369998792, guid: 9777962fff510ee46a8f8e90dc28c983, type: 3}
+    - {fileID: -9029808908477776541, guid: 9777962fff510ee46a8f8e90dc28c983, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9777962fff510ee46a8f8e90dc28c983, type: 3}

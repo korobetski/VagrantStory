@@ -176,6 +176,27 @@ TextureImporter:
   - first:
       213: -4819520670167334924
     second: Bolt
+  - first:
+      213: -6290378802907453528
+    second: AverageHead
+  - first:
+      213: 2640899857716267191
+    second: AverageBody
+  - first:
+      213: 6785282818369122537
+    second: AverageBatModeRightArm
+  - first:
+      213: -4416765494593337283
+    second: AverageComModeRightArm
+  - first:
+      213: -212384874880746116
+    second: AverageLegs
+  - first:
+      213: -206408671690394142
+    second: AverageComModeLeftArm
+  - first:
+      213: -5349329115469058077
+    second: AverageBatModeLeftArm
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -205,7 +226,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -1473,6 +1494,153 @@ TextureImporter:
       bones: []
       spriteID: 0bdaee450c5fb7a449863419f7ce3669
       internalID: -4819520670167334924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageHead
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 310
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56847ab69a0eb2647b7d10c60efb13c1
+      internalID: -6290378802907453528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageBody
+      rect:
+        serializedVersion: 2
+        x: 1281
+        y: 295
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b59ce4f762a3bf4da9809a6383f703a
+      internalID: 2640899857716267191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageBatModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1292
+        y: 301
+        width: 18
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0648f34a462a1d45aea50ecd8d13a00
+      internalID: 6785282818369122537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageComModeRightArm
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 277
+        width: 9
+        height: 19
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a70ec310d5066744cb5c1cd3a59c9dc3
+      internalID: -4416765494593337283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageLegs
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 296
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb79f3f7df6fbf247b9a839f2eff480f
+      internalID: -212384874880746116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageComModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 302
+        width: 9
+        height: 17
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e65c1681e2f8ac4db286944e07998d9
+      internalID: -206408671690394142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AverageBatModeLeftArm
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 274
+        width: 12
+        height: 21
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99bf04a6188cf24d95cf456250f80ac
+      internalID: -5349329115469058077
       vertices: []
       indices: 
       edges: []

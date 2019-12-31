@@ -7,13 +7,14 @@
         public string name = "";
         public Enums.eMaterial type;
         public Statistics statistics;
+        public short DP = 0;
 
 
 
         private Enums.eMaterial[] types = { Enums.eMaterial.NONE, Enums.eMaterial.WOOD, Enums.eMaterial.LEATHER, Enums.eMaterial.BRONZE,
             Enums.eMaterial.IRON, Enums.eMaterial.HAGANE, Enums.eMaterial.SILVER, Enums.eMaterial.DAMASCUS };
 
-        public SmithMaterial(string na, byte t, short _h, short _b, short _u, short _p, short _d, short _e, short _phy, short _ai, short _fi, short _ea, short _wa, short _li, short _da, short _str, short _int, short _agi)
+        public SmithMaterial(string na, byte t, short _h, short _b, short _u, short _p, short _d, short _e, short _phy, short _ai, short _fi, short _ea, short _wa, short _li, short _da, short _str, short _int, short _agi, short _dp)
         {
             name = na;
             type = types[t];
@@ -35,6 +36,7 @@
             statistics.STR.value = _str;
             statistics.INT.value = _int;
             statistics.AGI.value = _agi;
+            DP = _dp;
         }
     }
 }

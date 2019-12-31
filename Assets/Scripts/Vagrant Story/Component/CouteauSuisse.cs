@@ -1,9 +1,11 @@
 ﻿using MyBox;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using Utils;
 using VagrantStory.Core;
 using VagrantStory.Database;
+using VagrantStory.Items;
 
 namespace VagrantStory.Component
 {
@@ -11,7 +13,7 @@ namespace VagrantStory.Component
     public class CouteauSuisse : MonoBehaviour
     {
 
-        public MaterialsDB.eMaterials material = MaterialsDB.eMaterials.Bronze;
+        public Enums.eMaterial material = Enums.eMaterial.BRONZE;
         [Separator("Blade")]
         public Enums.eBladeCategory category = Enums.eBladeCategory.SWORD;
         [ConditionalField(nameof(category), false, Enums.eBladeCategory.DAGGER)] public Enums.eDaggerBlade dagger = Enums.eDaggerBlade.None;
@@ -25,6 +27,7 @@ namespace VagrantStory.Component
         [ConditionalField(nameof(category), false, Enums.eBladeCategory.POLEARM)] public Enums.ePolearmBlade polearm = Enums.ePolearmBlade.None;
         [ConditionalField(nameof(category), false, Enums.eBladeCategory.CROSSBOW)] public Enums.eCrossbowBlade crossbow = Enums.eCrossbowBlade.None;
         [ConditionalField(nameof(category), false, Enums.eBladeCategory.SHIELD)] public Enums.eShield shield = Enums.eShield.None;
+        private ushort _bladeId = 0;
 
         [Separator("Grip")]
         [ReadOnly] public Enums.eGripCategory gripType = Enums.eGripCategory.Guard;
@@ -32,6 +35,7 @@ namespace VagrantStory.Component
         [ConditionalField(nameof(gripType), false, Enums.eGripCategory.Grip)] public Enums.eGrip grip = Enums.eGrip.None;
         [ConditionalField(nameof(gripType), false, Enums.eGripCategory.Pole)] public Enums.ePole pole = Enums.ePole.None;
         [ConditionalField(nameof(gripType), false, Enums.eGripCategory.Bolt)] public Enums.eBolt bolt = Enums.eBolt.None;
+        private ushort _gripId = 0;
 
         [Separator("Gems")]
         [ReadOnly] public uint gemSlot = 0;
@@ -44,6 +48,8 @@ namespace VagrantStory.Component
 
 
         [Separator("Statistics")]
+        public byte PP = 100;
+        public byte DP = 100;
         [ReadOnly] public Statistics statistics;
 
 
@@ -54,6 +60,7 @@ namespace VagrantStory.Component
 
         private void Start()
         {
+            OnValidate();
         }
 
 
@@ -62,7 +69,7 @@ namespace VagrantStory.Component
             bool reloadModel = false;
 
             statistics = new Statistics();
-            if (material != MaterialsDB.eMaterials.None)
+            if (material != Enums.eMaterial.NONE)
             {
                 statistics += MaterialsDB.List[(int)material].statistics;
                 if (_material != (int)material)
@@ -75,100 +82,66 @@ namespace VagrantStory.Component
 
             if (category == Enums.eBladeCategory.DAGGER && dagger != Enums.eDaggerBlade.None)
             {
-                statistics += BladesDB.List[(int)dagger].statistics;
-                if (_modelId != BladesDB.List[(int)dagger].wepID)
-                {
-                    _modelId = BladesDB.List[(int)dagger].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)dagger;
             }
             else if (category == Enums.eBladeCategory.SWORD && sword != Enums.eSwordBlade.None)
             {
-                statistics += BladesDB.List[(int)sword].statistics;
-                if (_modelId != BladesDB.List[(int)sword].wepID)
-                {
-                    _modelId = BladesDB.List[(int)sword].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)sword;
             }
             else if (category == Enums.eBladeCategory.GREAT_SWORD && greatSword != Enums.eGreatSwordBlade.None)
             {
-                statistics += BladesDB.List[(int)greatSword].statistics;
-                if (_modelId != BladesDB.List[(int)greatSword].wepID)
-                {
-                    _modelId = BladesDB.List[(int)greatSword].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)greatSword;
             }
             else if (category == Enums.eBladeCategory.AXE && axe != Enums.eAxeBlade.None)
             {
-                statistics += BladesDB.List[(int)axe].statistics;
-                if (_modelId != BladesDB.List[(int)axe].wepID)
-                {
-                    _modelId = BladesDB.List[(int)axe].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)axe;
             }
             else if (category == Enums.eBladeCategory.MACE && mace != Enums.eMaceBlade.None)
             {
-                statistics += BladesDB.List[(int)mace].statistics;
-                if (_modelId != BladesDB.List[(int)mace].wepID)
-                {
-                    _modelId = BladesDB.List[(int)mace].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)mace;
             }
             else if (category == Enums.eBladeCategory.GREAT_AXE && greatAxe != Enums.eGreatAxeBlade.None)
             {
-                statistics += BladesDB.List[(int)greatAxe].statistics;
-                if (_modelId != BladesDB.List[(int)greatAxe].wepID)
-                {
-                    _modelId = BladesDB.List[(int)greatAxe].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)greatAxe;
             }
             else if (category == Enums.eBladeCategory.STAFF && staff != Enums.eStaffBlade.None)
             {
-                statistics += BladesDB.List[(int)staff].statistics;
-                if (_modelId != BladesDB.List[(int)staff].wepID)
-                {
-                    _modelId = BladesDB.List[(int)staff].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)staff;
             }
             else if (category == Enums.eBladeCategory.HEAVY_MACE && heavyMace != Enums.eHeavyMaceBlade.None)
             {
-                statistics += BladesDB.List[(int)heavyMace].statistics;
-                if (_modelId != BladesDB.List[(int)heavyMace].wepID)
-                {
-                    _modelId = BladesDB.List[(int)heavyMace].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)heavyMace;
             }
             else if (category == Enums.eBladeCategory.POLEARM && polearm != Enums.ePolearmBlade.None)
             {
-                statistics += BladesDB.List[(int)polearm].statistics;
-                if (_modelId != BladesDB.List[(int)polearm].wepID)
-                {
-                    _modelId = BladesDB.List[(int)polearm].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)polearm;
             }
             else if (category == Enums.eBladeCategory.CROSSBOW && crossbow != Enums.eCrossbowBlade.None)
             {
-                statistics += BladesDB.List[(int)crossbow].statistics;
-                if (_modelId != BladesDB.List[(int)crossbow].wepID)
-                {
-                    _modelId = BladesDB.List[(int)crossbow].wepID;
-                    reloadModel = true;
-                }
+                _bladeId = (ushort)crossbow;
             }
             else if (category == Enums.eBladeCategory.SHIELD && shield != Enums.eShield.None)
             {
-                statistics += ArmorsDB.ShieldList[(int)shield].statistics;
-                if (_modelId != ArmorsDB.ShieldList[(int)shield].wepID)
+                _bladeId = (ushort)shield;
+            }
+
+            if (category != Enums.eBladeCategory.SHIELD)
+            {
+                if (_bladeId > 0)
                 {
-                    _modelId = ArmorsDB.ShieldList[(int)shield].wepID;
+                    statistics += BladesDB.List[_bladeId].statistics;
+                    if (_modelId != BladesDB.List[_bladeId].wepID)
+                    {
+                        _modelId = BladesDB.List[_bladeId].wepID;
+                        reloadModel = true;
+                    }
+                }
+            } else
+            {
+                if (_bladeId > 0) statistics += ArmorsDB.ShieldList[_bladeId - 90].statistics;
+                if (_modelId != ArmorsDB.ShieldList[_bladeId - 90].wepID)
+                {
+                    _modelId = ArmorsDB.ShieldList[_bladeId - 90].wepID;
                     reloadModel = true;
                 }
             }
@@ -182,8 +155,9 @@ namespace VagrantStory.Component
 
                 if (guard != Enums.eGuard.None)
                 {
-                    gemSlot = GripsDB.List[(int)guard].gemSlots;
-                    statistics += GripsDB.List[(int)guard].statistics;
+                    _gripId = (ushort)guard;
+                    gemSlot = GripsDB.List[_gripId].gemSlots;
+                    statistics += GripsDB.List[_gripId].statistics;
                 }
                 else
                 {
@@ -201,7 +175,9 @@ namespace VagrantStory.Component
                 bolt = Enums.eBolt.None;
                 if (grip != Enums.eGrip.None)
                 {
-                    gemSlot = GripsDB.List[(int)grip].gemSlots; statistics += GripsDB.List[(int)grip].statistics;
+                    _gripId = (ushort)grip;
+                    gemSlot = GripsDB.List[_gripId].gemSlots;
+                    statistics += GripsDB.List[_gripId].statistics;
                 }
                 else
                 {
@@ -216,7 +192,12 @@ namespace VagrantStory.Component
                 guard = Enums.eGuard.None;
                 grip = Enums.eGrip.None;
                 bolt = Enums.eBolt.None;
-                if (pole != Enums.ePole.None) { gemSlot = GripsDB.List[(int)pole].gemSlots; statistics += GripsDB.List[(int)pole].statistics; }
+                if (pole != Enums.ePole.None)
+                {
+                    _gripId = (ushort)pole;
+                    gemSlot = GripsDB.List[_gripId].gemSlots;
+                    statistics += GripsDB.List[_gripId].statistics;
+                }
                 else
                 {
                     gemSlot = 0;
@@ -230,7 +211,12 @@ namespace VagrantStory.Component
                 guard = Enums.eGuard.None;
                 grip = Enums.eGrip.None;
                 pole = Enums.ePole.None;
-                if (bolt != Enums.eBolt.None) { gemSlot = GripsDB.List[(int)bolt].gemSlots; statistics += GripsDB.List[(int)bolt].statistics; }
+                if (bolt != Enums.eBolt.None)
+                {
+                    _gripId = (ushort)bolt;
+                    gemSlot = GripsDB.List[_gripId].gemSlots;
+                    statistics += GripsDB.List[_gripId].statistics;
+                }
                 else
                 {
                     gemSlot = 0;
@@ -241,6 +227,7 @@ namespace VagrantStory.Component
             else if (category == Enums.eBladeCategory.SHIELD)
             {
                 // shields have no grip, but have gem slots
+                _gripId = 0;
                 gripType = Enums.eGripCategory.None;
                 guard = Enums.eGuard.None;
                 grip = Enums.eGrip.None;
@@ -249,7 +236,7 @@ namespace VagrantStory.Component
 
                 if (shield != Enums.eShield.None)
                 {
-                    gemSlot = ArmorsDB.ShieldList[(int)shield].gemSlots;
+                    gemSlot = ArmorsDB.ShieldList[(int)shield - 90].gemSlots;
                 }
                 else
                 {
@@ -260,6 +247,7 @@ namespace VagrantStory.Component
             }
             else
             {
+                _gripId = 0;
                 gripType = Enums.eGripCategory.None;
                 guard = Enums.eGuard.None;
                 grip = Enums.eGrip.None;
@@ -271,7 +259,86 @@ namespace VagrantStory.Component
 
             if (reloadModel)
             {
-                LoadWEPModel(_modelId);
+                //LoadWEPModel(_modelId);
+            }
+        }
+
+        public Weapon weapon
+        {
+            get
+            {
+                List<Gem> gems = new List<Gem>();
+                if (gem1 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem1]);
+                if (gem2 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem2]);
+                if (gem3 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem3]);
+                //  public static Weapon Fandango = new Weapon("Fandango", Enums.eMaterial.BRONZE, BladesDB.Scimitar, GripsDB.Short_Hilt, 126, 136);
+                if (category == Enums.eBladeCategory.SHIELD)
+                {
+                    return new Weapon("shield", material, ArmorsDB.ShieldList[_bladeId - 90], DP, PP, gems);
+                } else
+                {
+                    return new Weapon("weapon", material, BladesDB.List[_bladeId], GripsDB.List[_gripId], DP, PP, gems);
+                }
+            }
+            set
+            {
+                Weapon weap = value;
+                SetBlade(weap.blade);
+                material = weap.blade.material;
+                if (weap.gems.Count > 0) gem1 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[0]);
+                if (weap.gems.Count > 1) gem2 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[1]);
+                if (weap.gems.Count > 2) gem3 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[2]);
+            }
+        }
+
+        private void SetBlade(Blade blade)
+        {
+            _bladeId = blade.id;
+            category = blade.bladeType;
+
+            if (category == Enums.eBladeCategory.DAGGER)
+            {
+                dagger = (Enums.eDaggerBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.SWORD)
+            {
+                sword = (Enums.eSwordBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.GREAT_SWORD)
+            {
+                greatSword = (Enums.eGreatSwordBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.AXE)
+            {
+                axe = (Enums.eAxeBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.MACE)
+            {
+                mace = (Enums.eMaceBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.GREAT_AXE)
+            {
+                greatAxe = (Enums.eGreatAxeBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.STAFF)
+            {
+                staff = (Enums.eStaffBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.HEAVY_MACE)
+            {
+                heavyMace = (Enums.eHeavyMaceBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.POLEARM)
+            {
+                polearm = (Enums.ePolearmBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.CROSSBOW && crossbow != Enums.eCrossbowBlade.None)
+            {
+                crossbow = (Enums.eCrossbowBlade)_bladeId;
+            }
+            else if (category == Enums.eBladeCategory.SHIELD && shield != Enums.eShield.None)
+            {
+                shield = (Enums.eShield)_bladeId;
             }
         }
 

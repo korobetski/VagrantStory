@@ -3,9 +3,9 @@
 
     public class Key : Item
     {
-        public string lockId = ""; // the Key lockId must match with the Door lockId to unlock a Door.
-
-        public Key(string id, string name = "Key")
+        public uint lockId = 0; // the Key lockId must match with the Door lockId to unlock a Door.
+        public bool isSigil = false;
+        public Key(uint id, string name = "Key")
         {
             stackable = false;
             quantity = 1;
