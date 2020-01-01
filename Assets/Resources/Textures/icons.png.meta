@@ -106,7 +106,7 @@ TextureImporter:
     second: icons_0
   - first:
       213: -3315287088158993630
-    second: Gloves
+    second: Glove
   - first:
       213: 4161028708796736728
     second: Boots
@@ -151,7 +151,7 @@ TextureImporter:
     second: Dagger
   - first:
       213: -2313266835999037447
-    second: Spear
+    second: Polearm
   - first:
       213: -1327247425645525364
     second: Axe
@@ -995,7 +995,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Gloves
+      name: Glove
       rect:
         serializedVersion: 2
         x: 1664
@@ -1310,7 +1310,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Spear
+      name: Polearm
       rect:
         serializedVersion: 2
         x: 1632
@@ -1507,7 +1507,7 @@ TextureImporter:
         width: 11
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1528,7 +1528,7 @@ TextureImporter:
         width: 9
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1591,7 +1591,7 @@ TextureImporter:
         width: 26
         height: 22
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

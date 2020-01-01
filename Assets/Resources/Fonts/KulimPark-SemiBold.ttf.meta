@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: 6ef4a8d75f1a53f45ae498aa1327dc4f
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Kulim Park
+  fontNames:
+  - Kulim Park
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b32fe400dd38c8748a66f19235ce8e9e, type: 3}
+  - {fileID: 12800000, guid: 56f670a16977a2549864b93d4e826163, type: 3}
+  - {fileID: 12800000, guid: 71d449a22017d4f41a04531f6ec32bef, type: 3}
+  - {fileID: 12800000, guid: daf100c44387e0f4dba3678c741abd0f, type: 3}
+  - {fileID: 12800000, guid: 4e2edf58ee33aa14d986899517eea3e9, type: 3}
+  - {fileID: 12800000, guid: 1d47c029b0867b349b70c94ad71b0196, type: 3}
+  - {fileID: 12800000, guid: e88c04db22c4fe2408f443be3ac686bb, type: 3}
+  - {fileID: 12800000, guid: 21d764ff63b49dd42a101efb11fdbcbb, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
