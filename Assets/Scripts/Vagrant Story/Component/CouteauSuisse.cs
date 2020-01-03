@@ -267,18 +267,26 @@ namespace VagrantStory.Component
         {
             get
             {
+                OnValidate();
                 List<Gem> gems = new List<Gem>();
                 if (gem1 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem1]);
                 if (gem2 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem2]);
                 if (gem3 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem3]);
                 //  public static Weapon Fandango = new Weapon("Fandango", Enums.eMaterial.BRONZE, BladesDB.Scimitar, GripsDB.Short_Hilt, 126, 136);
-                if (category == Enums.eBladeCategory.SHIELD)
+
+                if (_bladeId != 0)
                 {
-                    return new Weapon("shield", material, ArmorsDB.ShieldList[_bladeId - 90], DP, PP, gems);
-                } else
-                {
-                    return new Weapon("weapon", material, BladesDB.List[_bladeId], GripsDB.List[_gripId], DP, PP, gems);
+                    if (category == Enums.eBladeCategory.SHIELD)
+                    {
+                        return new Weapon("shield", material, ArmorsDB.ShieldList[_bladeId - 90], DP, PP, gems);
+                    }
+                    else
+                    {
+                        return new Weapon("weapon", material, BladesDB.List[_bladeId], GripsDB.List[_gripId], DP, PP, gems);
+                    }
                 }
+
+                return null;
             }
             set
             {

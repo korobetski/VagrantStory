@@ -1,5 +1,6 @@
 ﻿
 using System;
+using VagrantStory.Core;
 
 namespace VagrantStory.Items
 {
@@ -7,11 +8,10 @@ namespace VagrantStory.Items
     [Serializable]
     public class Item
     {
-        public enum ItemType { MISC, GEM, KEY, WEAPON, ARMOR, BLADE, GRIP, GRIMOIRE, FOOD };
 
         public string name = "";
         public string description = "";
-        public ItemType type = ItemType.MISC;
+        public Enums.eItemCategory type = Enums.eItemCategory.MISC;
         public bool stackable = true;
         public uint quantity = 0;
     }

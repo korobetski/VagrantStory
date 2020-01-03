@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using VagrantStory.Core;
 
 namespace VagrantStory.Component
 {
@@ -20,13 +21,8 @@ namespace VagrantStory.Component
 
         [Separator("Variables")]
         public string slotName = "Slot Name";
-        public enum eIcon
-        {
-            DAGGER, SWORD, GREATSWORD, AXE, MACE, GREATAXE, STAFF, HEAVYMACE, POLEARM, CROSSBOW, SHIELD,
-            GUARD, GRIP, POLE, BOLT, GEM, HELM, ARMOR, GLOVE, BOOTS, ACCESSORY
-        }
-        public eIcon icon;
-        public enum eMaterialLetter { W, L, B, I, H, S, D, NONE }
+        public Enums.eItemCategory icon;
+        public enum eMaterialLetter { NONE,  W, L, B, I, H, S, D  }
         public eMaterialLetter letter = eMaterialLetter.W;
         public string itemName = "Item Name";
 
@@ -44,14 +40,14 @@ namespace VagrantStory.Component
             if (_materialColors == null || _materialColors.Length == 0)
             {
                 _materialColors = new Color32[] {
+                    Color.clear, // none
                     new Color32(0xA0, 0x52, 0x2D, 0xFF), // WOOD
                     new Color32(0xB8, 0x86, 0x0B, 0xFF), // LEATHER
                     new Color32(0x77, 0x88, 0x99, 0xFF), // BRONZE
                     new Color32(0xD3, 0xD3, 0xD3, 0xFF), // IRON
                     new Color32(0xB0, 0xE0, 0xE6, 0xFF), // HAGANE
                     new Color32(0xF0, 0xFF, 0xFF, 0xFF), // SILVER
-                    new Color32(0xEE, 0xE8, 0xAA, 0xFF), // DAMASCUS
-                    Color.black, // none
+                    new Color32(0xEE, 0xE8, 0xAA, 0xFF) // DAMASCUS
                 };
             }
             slotNameUI.text = slotName.ToUpper();
@@ -62,8 +58,8 @@ namespace VagrantStory.Component
             } else
             {
                 materialLetterUI.text = letter.ToString();
-                materialLetterUI.color = _materialColors[(int)letter];
             }
+            materialLetterUI.color = _materialColors[(int)letter];
             //string iconName = Enum.GetName(typeof(eIcon), icon).ToLower();
             string iconName = icon.ToString().ToLower();
             iconUI.sprite = icons[IndexOfIcon(iconName)];

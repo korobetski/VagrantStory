@@ -17,7 +17,6 @@ public class AshleyController : MonoBehaviour
     protected bool m_ExternalInputBlocked;
 
     private bool _jumping = false;
-    private float _verticalForce = 0;
     private Animator _animator;
     private Rigidbody _rigidBody;
 
@@ -133,10 +132,10 @@ public class AshleyController : MonoBehaviour
 
         Vector3 localMovementDirection = new Vector3(m_Movement.x, 0f, m_Movement.y).normalized;
 
+        _animator.SetFloat("Ground Distance", hitGround.distance - 1.55f);
         if (hitGround.distance <= 1.56f)
         {
             _jumping = false;
-            _verticalForce = 0;
             _animator.SetBool("Grounded", true);
         }
         else

@@ -10,6 +10,12 @@
         public enum eDamageType { NONE = 0, BLUNT, EDGED, PIERCING };
         public enum eBladeCategory { NONE = 0, DAGGER = 1, SWORD = 2, GREAT_SWORD = 3, AXE = 4, MACE = 5, GREAT_AXE = 6, STAFF = 7, HEAVY_MACE = 8, POLEARM = 9, CROSSBOW = 10, SHIELD, AXEANDMACE };
 
+        public enum eItemCategory
+        {
+            NONE, DAGGER, SWORD, GREATSWORD, AXE, MACE, GREATAXE, STAFF, HEAVYMACE, POLEARM, CROSSBOW, SHIELD,
+            GUARD, GRIP, POLE, BOLT, GEM, HELM, ARMOR, GLOVE, BOOTS, ACCESSORY,
+            HERB, POTION, FOOD, KEY, GRIMOIRE, MISC
+        };
         public enum eSpellCategory { NONE = 0, SHAMAN, ENCHANTER, WARLOCK, SORCERER, OTHER };
         public enum eCombatTechType { NONE = 0, ATTACK, DEFENSE };
 

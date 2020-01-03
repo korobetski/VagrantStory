@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using VagrantStory.Component;
 
 namespace VagrantStory.Core
 {
@@ -60,6 +61,10 @@ namespace VagrantStory.Core
         private GameObject _rightArm;
         private GameObject _leftArm;
         private GameObject _legs;
+
+
+        private bool _paused = false;
+        private GameObject _menu;
 
         // Start is called before the first frame update
         void Start()
@@ -204,6 +209,62 @@ namespace VagrantStory.Core
                 _rightArm.GetComponent<SpriteRenderer>().sprite = ComModeRightArm;
                 _leftArm.GetComponent<SpriteRenderer>().sprite = ComModeLeftArm;
             }
+
+
+
+
+            if (Input.GetButtonDown("Open Menu"))
+            {
+                _paused = toggleMenu();
+            }
+
+
+
+            if (Input.GetButtonDown("Cancel"))
+            {
+                toggleMenu();
+            }
+        }
+
+        bool toggleMenu()
+        {
+            if (Time.timeScale == 0f)
+            {
+                if (_menu == null || GameMenuScript.openned == false)
+                {
+                    Time.timeScale = 1f;
+                    DestroyMenu();
+                    return (false);
+                }
+                else
+                {
+                    return true;
+                }
+            }
+            else
+            {
+                Time.timeScale = 0f;
+                OpenMenu();
+                return (true);
+            }
+
+
+        }
+
+        private void OpenMenu()
+        {
+            string menuPath = "Prefabs/GameMenu";
+            _menu = Instantiate(Resources.Load(menuPath), Camera.main.transform) as GameObject;
+            Canvas cnv = _menu.GetComponent<Canvas>();
+            cnv.worldCamera = Camera.main;
+            cnv.planeDistance = 0.5f;
+            cnv.pixelPerfect = true;
+        }
+
+        private void DestroyMenu()
+        {
+            Destroy(_menu);
+            _menu = null;
         }
     }
 

@@ -197,6 +197,63 @@ TextureImporter:
   - first:
       213: -5349329115469058077
     second: AverageBatModeLeftArm
+  - first:
+      213: -51561205447984019
+    second: MenuEquip
+  - first:
+      213: -262674633662834814
+    second: MenuMics
+  - first:
+      213: -640743438806042020
+    second: MenuGem
+  - first:
+      213: 8900382282703920124
+    second: MenuArmor
+  - first:
+      213: -547045190562738081
+    second: MenuShield
+  - first:
+      213: -6117566058947084720
+    second: MenuGrip
+  - first:
+      213: -3132545538558452080
+    second: MenuBlade
+  - first:
+      213: 7994077166546672294
+    second: MenuWeapon
+  - first:
+      213: -3532641335276852572
+    second: EQP
+  - first:
+      213: -4664344689156196882
+    second: SET
+  - first:
+      213: 5335368736619561786
+    second: MapPlayerIcon
+  - first:
+      213: -2633773751839829338
+    second: SelMenuEquip
+  - first:
+      213: -7080317941550144358
+    second: SelMenuMisc
+  - first:
+      213: -3485010052760226316
+    second: SelMenuGem
+  - first:
+      213: -638936179160390933
+    second: SelMenuArmor
+  - first:
+      213: 3841348261665338559
+    second: SelMenuShield
+  - first:
+      213: 2233880305862279715
+    second: SelMenuGrip
+  - first:
+      213: 1932309049867650304
+    second: SelMenuBlade
+  - first:
+      213: 8427919720049111751
+    second: SelMenuWeapon
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -1641,6 +1698,405 @@ TextureImporter:
       bones: []
       spriteID: c99bf04a6188cf24d95cf456250f80ac
       internalID: -5349329115469058077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuEquip
+      rect:
+        serializedVersion: 2
+        x: 1768
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 357ffdbf0aa401645897a025d1597080
+      internalID: -51561205447984019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuMics
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b95a8830767d484b80e0561503b4197
+      internalID: -262674633662834814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuGem
+      rect:
+        serializedVersion: 2
+        x: 1736
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b91f47cd4c5594aa99879154ec6579
+      internalID: -640743438806042020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuArmor
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2524726ec84ab4aab28e1e116ab777
+      internalID: 8900382282703920124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuShield
+      rect:
+        serializedVersion: 2
+        x: 1704
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672a5154a4e7e86468e911dc0196d9a8
+      internalID: -547045190562738081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuGrip
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9dc43627cbaf454585779be2913b632
+      internalID: -6117566058947084720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuBlade
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd89ff9416140146ae00b5e3106f3e2
+      internalID: -3132545538558452080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MenuWeapon
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9118ccc590f2c543995f7c2a134a788
+      internalID: 7994077166546672294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EQP
+      rect:
+        serializedVersion: 2
+        x: 1376
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26c7d07de370c64ca1dd8cb4b965f38
+      internalID: -3532641335276852572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SET
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cac56d7a30306d47a00b736ae5b3d07
+      internalID: -4664344689156196882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MapPlayerIcon
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e38b19849462b4eb2426fc90e35d65
+      internalID: 5335368736619561786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuEquip
+      rect:
+        serializedVersion: 2
+        x: 1512
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9388522288d6b54ba09ec27b46ee170
+      internalID: -2633773751839829338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuMisc
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c2a8c1a779da4e469875680cd46baf3
+      internalID: -7080317941550144358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuGem
+      rect:
+        serializedVersion: 2
+        x: 1480
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ce9ae8eb912fe4c9c9fc53bf114835
+      internalID: -3485010052760226316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuArmor
+      rect:
+        serializedVersion: 2
+        x: 1464
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1d0005b36ebf6469626a21e54accee
+      internalID: -638936179160390933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuShield
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39baa343a0ebc4e4b96df49bf9a8c954
+      internalID: 3841348261665338559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuGrip
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4caa6e852b72bf428aa746473ad760b
+      internalID: 2233880305862279715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuBlade
+      rect:
+        serializedVersion: 2
+        x: 1416
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db998cc4f841e643bb3282082b509de
+      internalID: 1932309049867650304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SelMenuWeapon
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 336
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2d55a8bc1fdda4795375001b959433
+      internalID: 8427919720049111751
       vertices: []
       indices: 
       edges: []

@@ -20,6 +20,7 @@ namespace VagrantStory.Items
 
         public Armor(string na, string desc, byte id, byte wepid, byte type, byte gs = 0)
         {
+            this.type = Enums.eItemCategory.ARMOR;
             category = armorTypes[type];
             statistics = new Statistics();
             SetMaterial(Enums.eMaterial.LEATHER);

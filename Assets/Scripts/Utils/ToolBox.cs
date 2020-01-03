@@ -162,12 +162,12 @@ namespace Utils
                     {
                         UnityEditor.EditorApplication.delayCall += () =>
                         {
-                            GameObject.DestroyImmediate(child.gameObject);
+                            GameObject.DestroyImmediate(child.gameObject, true);
                         };
                     }
                     else
                     {
-                        GameObject.DestroyImmediate(child.gameObject);
+                        GameObject.DestroyImmediate(child.gameObject, true);
                     }
 #else
                     GameObject.Destroy(child.gameObject);

@@ -30,63 +30,6 @@ CapsuleCollider:
   m_Height: 4.66
   m_Direction: 1
   m_Center: {x: 0, y: -0.58, z: 0}
---- !u!114 &-9029808908477776541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7644464907977601107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af2d61c12cc867b4a83a8088b74ef78b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  material: 3
-  category: 2
-  dagger: 0
-  sword: 0
-  greatSword: 0
-  axe: 0
-  mace: 0
-  greatAxe: 0
-  staff: 0
-  heavyMace: 0
-  polearm: 0
-  crossbow: 0
-  shield: 0
-  gripType: 1
-  guard: 0
-  grip: 0
-  pole: 0
-  bolt: 0
-  gemSlot: 0
-  gemSlot1: 0
-  gemSlot2: 0
-  gemSlot3: 0
-  gem1: 0
-  gem2: 0
-  gem3: 0
-  statistics:
-    STRValue: 3
-    INTValue: 2
-    AGIValue: -2
-    HUMANValue: -1
-    BEASTValue: -1
-    UNDEADValue: 2
-    PHANTOMValue: -1
-    DRAGONValue: -1
-    EVILValue: -5
-    PHYSICALValue: 8
-    AIRValue: -5
-    FIREValue: -5
-    EARTHValue: 3
-    WATERValue: 3
-    LIGHTValue: -2
-    DARKValue: -2
-    BLUNTValue: 0
-    EDGEDValue: 0
-    PIERCINGValue: 0
 --- !u!114 &172722175356555588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,15 +68,74 @@ MonoBehaviour:
   RightGlove: 0
   Boots: 0
   Accessory: 0
-  OffHand: 0
   BattleMode: 0
   WeaponRootTransfrom: {fileID: 7331121224823718265}
+  ShieldRootTransfrom: {fileID: 0}
   HeadStatus: 0
   BodyStatus: 0
   RightArmStatus: 0
   LeftArmStatus: 0
   LegsStatus: 0
   Inventory: []
+--- !u!114 &-9029808908477776541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7644464907977601107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af2d61c12cc867b4a83a8088b74ef78b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material: 3
+  category: 2
+  dagger: 0
+  sword: 0
+  greatSword: 0
+  axe: 0
+  mace: 0
+  greatAxe: 0
+  staff: 0
+  heavyMace: 0
+  polearm: 0
+  crossbow: 0
+  shield: 0
+  gripType: 1
+  guard: 0
+  grip: 0
+  pole: 0
+  bolt: 0
+  gemSlot: 0
+  gemSlot1: 0
+  gemSlot2: 0
+  gemSlot3: 0
+  gem1: 0
+  gem2: 0
+  gem3: 0
+  PP: 100
+  DP: 100
+  statistics:
+    STRValue: 3
+    INTValue: 2
+    AGIValue: -2
+    HUMANValue: -1
+    BEASTValue: -1
+    UNDEADValue: 2
+    PHANTOMValue: -1
+    DRAGONValue: -1
+    EVILValue: -5
+    PHYSICALValue: 8
+    AIRValue: -5
+    FIREValue: -5
+    EARTHValue: 3
+    WATERValue: 3
+    LIGHTValue: -2
+    DARKValue: -2
+    BLUNTValue: 0
+    EDGEDValue: 0
+    PIERCINGValue: 0
 --- !u!114 &5689070366142685790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +173,8 @@ MonoBehaviour:
   gem1: 0
   gem2: 0
   gem3: 0
+  PP: 100
+  DP: 100
   statistics:
     STRValue: 3
     INTValue: 2
@@ -246,17 +250,17 @@ PrefabInstance:
     - target: {fileID: 7247282418537762409, guid: 45b8258420d830542a010d6740842af1,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.558569
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7247282418537762409, guid: 45b8258420d830542a010d6740842af1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.66
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7247282418537762409, guid: 45b8258420d830542a010d6740842af1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.4947411
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7247282418537762409, guid: 45b8258420d830542a010d6740842af1,
         type: 3}
