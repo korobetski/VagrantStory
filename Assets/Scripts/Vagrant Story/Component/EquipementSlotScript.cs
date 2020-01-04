@@ -1,7 +1,4 @@
 ﻿using MyBox;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using VagrantStory.Core;
@@ -22,11 +19,11 @@ namespace VagrantStory.Component
         [Separator("Variables")]
         public string slotName = "Slot Name";
         public Enums.eItemCategory icon;
-        public enum eMaterialLetter { NONE,  W, L, B, I, H, S, D  }
+        public enum eMaterialLetter { NONE, W, L, B, I, H, S, D }
         public eMaterialLetter letter = eMaterialLetter.W;
         public string itemName = "Item Name";
 
-        
+
         private Color32[] _materialColors;
 
 
@@ -55,7 +52,8 @@ namespace VagrantStory.Component
             if (letter == eMaterialLetter.NONE)
             {
                 materialLetterUI.text = "";
-            } else
+            }
+            else
             {
                 materialLetterUI.text = letter.ToString();
             }
@@ -69,7 +67,7 @@ namespace VagrantStory.Component
         private int IndexOfIcon(string iconName)
         {
             int index = -1;
-            for(int i = 0; i< icons.Length; i++)
+            for (int i = 0; i < icons.Length; i++)
             {
                 Sprite ic = icons[i];
                 if (ic.name.ToLower() == iconName)

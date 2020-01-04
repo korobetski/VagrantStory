@@ -136,9 +136,14 @@ namespace VagrantStory.Component
                         reloadModel = true;
                     }
                 }
-            } else
+            }
+            else
             {
-                if (_bladeId > 0) statistics += ArmorsDB.ShieldList[_bladeId - 90].statistics;
+                if (_bladeId > 0)
+                {
+                    statistics += ArmorsDB.ShieldList[_bladeId - 90].statistics;
+                }
+
                 if (_modelId != ArmorsDB.ShieldList[_bladeId - 90].wepID)
                 {
                     _modelId = ArmorsDB.ShieldList[_bladeId - 90].wepID;
@@ -269,9 +274,20 @@ namespace VagrantStory.Component
             {
                 OnValidate();
                 List<Gem> gems = new List<Gem>();
-                if (gem1 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem1]);
-                if (gem2 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem2]);
-                if (gem3 != Enums.eGem.None) gems.Add(GemsDB.List[(int)gem3]);
+                if (gem1 != Enums.eGem.None)
+                {
+                    gems.Add(GemsDB.List[(int)gem1]);
+                }
+
+                if (gem2 != Enums.eGem.None)
+                {
+                    gems.Add(GemsDB.List[(int)gem2]);
+                }
+
+                if (gem3 != Enums.eGem.None)
+                {
+                    gems.Add(GemsDB.List[(int)gem3]);
+                }
                 //  public static Weapon Fandango = new Weapon("Fandango", Enums.eMaterial.BRONZE, BladesDB.Scimitar, GripsDB.Short_Hilt, 126, 136);
 
                 if (_bladeId != 0)
@@ -293,9 +309,20 @@ namespace VagrantStory.Component
                 Weapon weap = value;
                 SetBlade(weap.blade);
                 material = weap.blade.material;
-                if (weap.gems.Count > 0) gem1 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[0]);
-                if (weap.gems.Count > 1) gem2 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[1]);
-                if (weap.gems.Count > 2) gem3 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[2]);
+                if (weap.gems.Count > 0)
+                {
+                    gem1 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[0]);
+                }
+
+                if (weap.gems.Count > 1)
+                {
+                    gem2 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[1]);
+                }
+
+                if (weap.gems.Count > 2)
+                {
+                    gem3 = (Enums.eGem)GemsDB.List.IndexOfItem<Gem>(weap.gems[2]);
+                }
             }
         }
 

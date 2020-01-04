@@ -18,7 +18,7 @@ namespace VagrantStory.Items
         public ushort PP = 0;
         public ushort MaxPP = 0;
 
-        public Weapon(string _name, Enums.eMaterial material, Blade _blade, Grip _grip, ushort _dp=100, ushort _pp=100, List<Gem> _gems = null)
+        public Weapon(string _name, Enums.eMaterial material, Blade _blade, Grip _grip, ushort _dp = 100, ushort _pp = 100, List<Gem> _gems = null)
         {
             gems = new List<Gem>();
             name = _name;

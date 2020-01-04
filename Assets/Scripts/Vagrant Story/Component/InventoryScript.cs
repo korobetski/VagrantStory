@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-using Utils;
 using VagrantStory.Items;
 
 
@@ -59,19 +57,20 @@ namespace VagrantStory.Component
                 GameObject.DestroyImmediate(child.gameObject);
             }
             //Debug.Log(" items.Count : " + items.Count);
-            for (int i = 0; i < items.Count; i++ )
+            for (int i = 0; i < items.Count; i++)
             {
                 Item item = items[i];
                 string slotPath = "Prefabs/InventorySlot";
                 GameObject slot = Instantiate(Resources.Load(slotPath), container.transform) as GameObject;
-                slot.transform.localPosition = new Vector3(34, -34 *i);
+                slot.transform.localPosition = new Vector3(34, -34 * i);
                 InventorySlotScript slotScript = slot.GetComponent<InventorySlotScript>();
                 slotScript.itemName = item.name;
                 slotScript.icon = item.type;
                 if (item.stackable)
                 {
                     slotScript.itemStack = string.Concat(item.quantity);
-                } else
+                }
+                else
                 {
                     slotScript.itemStack = "";
                 }

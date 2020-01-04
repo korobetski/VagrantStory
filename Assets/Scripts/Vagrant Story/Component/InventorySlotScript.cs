@@ -1,7 +1,4 @@
 ﻿using MyBox;
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using VagrantStory.Core;
@@ -41,7 +38,8 @@ namespace VagrantStory.Component
             {
                 iconUI.sprite = icons[IndexOfIcon(iconName)];
                 iconUI.color = Color.cyan;
-            } else
+            }
+            else
             {
                 iconUI.sprite = null;
                 iconUI.color = Color.clear;
@@ -57,7 +55,7 @@ namespace VagrantStory.Component
         private int IndexOfIcon(string iconName)
         {
             int index = -1;
-            for(int i = 0; i< icons.Length; i++)
+            for (int i = 0; i < icons.Length; i++)
             {
                 Sprite ic = icons[i];
                 if (ic.name.ToLower() == iconName)

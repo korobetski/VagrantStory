@@ -1,11 +1,7 @@
 ﻿using MyBox;
-using System;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
-using VagrantStory.Component;
 using VagrantStory.Core;
-using VagrantStory.Database;
 using VagrantStory.Items;
 
 
@@ -67,7 +63,7 @@ namespace VagrantStory.Component
 
 
 
-        private GameObject _combatSphere; 
+        private GameObject _combatSphere;
 
         // Start is called before the first frame update
         public void Start()
@@ -128,7 +124,7 @@ namespace VagrantStory.Component
             // Draw a yellow sphere at the transform's position
             if (Input.GetButtonDown("Action"))
             {
-                if(_combatSphere != null)
+                if (_combatSphere != null)
                 {
                     Destroy(_combatSphere);
                 }
@@ -136,7 +132,7 @@ namespace VagrantStory.Component
                 float range = 6f; // sword range
                 string spherePath = "Prefabs/CombatSphere";
                 _combatSphere = Instantiate(Resources.Load(spherePath), transform) as GameObject;
-                _combatSphere.transform.localScale = Vector3.one*range*2;
+                _combatSphere.transform.localScale = Vector3.one * range * 2;
             }
         }
 
@@ -154,7 +150,7 @@ namespace VagrantStory.Component
                 animator.SetLayerWeight(0, 0f);
                 animator.SetLayerWeight((int)MainHand.blade.bladeType, 1f);
             }
-                
+
             if (OffHand != null)
             {
                 shieldGO = OffHand.GameObject;
@@ -169,7 +165,11 @@ namespace VagrantStory.Component
         public void BattleModeOff()
         {
             Destroy(weaponGO);
-            if (OffHand != null) Destroy(shieldGO);
+            if (OffHand != null)
+            {
+                Destroy(shieldGO);
+            }
+
             animator.SetInteger("Weapon Type", 0);
             animator.SetLayerWeight(0, 1f);
             animator.SetLayerWeight((int)MainHand.blade.bladeType, 0f);

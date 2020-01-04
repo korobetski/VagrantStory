@@ -10,7 +10,7 @@ public class AshleyController : MonoBehaviour
 
 
     protected Vector2 m_Movement;
-    protected Vector2 m_Camera;
+
     protected bool m_Jump;
     protected bool m_Attack;
     protected bool m_Pause;
@@ -29,8 +29,12 @@ public class AshleyController : MonoBehaviour
     void Update()
     {
         m_Movement.Set(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        Debug.DrawRay(transform.position, new Vector3(m_Movement.x, 0, m_Movement.y) * 10, Color.white);
-        m_Camera.Set(Input.GetAxis("Mouse X"), Input.GetAxis("Mouse Y"));
+        Vector3 relMove = new Vector3(m_Movement.x, 0, m_Movement.y);
+        relMove = Quaternion.Euler(0, GameObject.Find("CameraRig").transform.rotation.eulerAngles.y, 0) * relMove;
+        Debug.DrawRay(transform.position, relMove * 10, Color.white);
+        m_Movement.Set(relMove.x, relMove.z);
+
+
         m_Jump = Input.GetButton("Jump");
 
 
@@ -40,7 +44,6 @@ public class AshleyController : MonoBehaviour
         {
             _animator.SetTrigger("Attack");
         }
-
 
         Vector3 sol = transform.position - new Vector3(0, 1.54f);
         Vector3 pieds = transform.position - new Vector3(0, 1.05f);
