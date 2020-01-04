@@ -68,7 +68,7 @@ MonoBehaviour:
   RightGlove: 0
   Boots: 0
   Accessory: 0
-  BattleMode: 0
+  BattleMode: 1
   WeaponRootTransfrom: {fileID: 7331121224823718265}
   ShieldRootTransfrom: {fileID: 9125198549531718463}
   HeadStatus: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   heavyMace: 0
   polearm: 0
   crossbow: 0
-  shield: 0
+  shield: 98
   gripType: 1
   guard: 1
   grip: 0
@@ -117,22 +117,22 @@ MonoBehaviour:
   PP: 100
   DP: 100
   statistics:
-    STRValue: 11
-    INTValue: 2
-    AGIValue: -4
-    HUMANValue: -1
-    BEASTValue: -1
-    UNDEADValue: 2
-    PHANTOMValue: -1
-    DRAGONValue: -1
-    EVILValue: -5
-    PHYSICALValue: 8
-    AIRValue: -5
-    FIREValue: -5
-    EARTHValue: 3
-    WATERValue: 3
-    LIGHTValue: -2
-    DARKValue: -2
+    STRValue: 14
+    INTValue: 4
+    AGIValue: -6
+    HUMANValue: -2
+    BEASTValue: -2
+    UNDEADValue: 4
+    PHANTOMValue: -2
+    DRAGONValue: -2
+    EVILValue: -10
+    PHYSICALValue: 16
+    AIRValue: -10
+    FIREValue: -10
+    EARTHValue: 6
+    WATERValue: 6
+    LIGHTValue: -4
+    DARKValue: -4
     BLUNTValue: 0
     EDGEDValue: 4
     PIERCINGValue: 1
@@ -160,14 +160,14 @@ MonoBehaviour:
   heavyMace: 0
   polearm: 0
   crossbow: 0
-  shield: 91
+  shield: 98
   gripType: 0
   guard: 0
   grip: 0
   pole: 0
   bolt: 0
-  gemSlot: 0
-  gemSlot1: 0
+  gemSlot: 1
+  gemSlot1: 1
   gemSlot2: 0
   gemSlot3: 0
   gem1: 0
@@ -177,7 +177,7 @@ MonoBehaviour:
   DP: 100
   statistics:
     STRValue: 10
-    INTValue: 11
+    INTValue: 12
     AGIValue: -1
     HUMANValue: 0
     BEASTValue: 0
@@ -255,7 +255,7 @@ PrefabInstance:
     - target: {fileID: 7247282418537762409, guid: 45b8258420d830542a010d6740842af1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.76
+      value: 1.46
       objectReference: {fileID: 0}
     - target: {fileID: 7247282418537762409, guid: 45b8258420d830542a010d6740842af1,
         type: 3}

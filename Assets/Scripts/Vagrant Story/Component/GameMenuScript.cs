@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -9,8 +10,9 @@ namespace VagrantStory.Component
     public class GameMenuScript : MonoBehaviour
     {
         public GameObject container;
-        public string[] itemNames = new string[] { "Magic", "Combat Technics", "Items", "Status", "Map", "Datas", "Options", "Score", "Tutorial" };
-        public UnityAction[] menuFunction = new UnityAction[] { ToggleMagicMenu, ToggleTechMenu, ToggleItemsMenu, ToggleStatusMenu, ToggleMapMenu, ToggleDatasMenu, ToggleOptionsMenu, ToggleScoreMenu, ToggleTutorialMenu };
+        public string[] itemNames = new string[] { "Magic", "Combat Technics", "Items", "Status", "Map", "Datas", "Options", "Score", "Tutorial", "Quit" };
+        public UnityAction[] menuFunction = new UnityAction[] { ToggleMagicMenu, ToggleTechMenu, ToggleItemsMenu, ToggleStatusMenu, ToggleMapMenu, ToggleDatasMenu, ToggleOptionsMenu, ToggleScoreMenu, ToggleTutorialMenu, Exit };
+
 
         public static bool openned = false;
 
@@ -82,6 +84,10 @@ namespace VagrantStory.Component
             Debug.Log("ToggleTutorialMenu");
         }
 
+        public static void Exit()
+        {
+            Application.Quit();
+        }
 
         // Start is called before the first frame update
         void Start()

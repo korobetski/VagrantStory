@@ -59,7 +59,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &2512283438735477068
 MonoBehaviour:
@@ -123,16 +123,7 @@ MonoBehaviour:
   - Options
   - Score
   - Tutorial
-  menuScreens:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 2779790668633308498, guid: b9f744f19c4ed9a49a68746b7ff0a636, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - Quit
 --- !u!1 &2512283439373710412
 GameObject:
   m_ObjectHideFlags: 0
