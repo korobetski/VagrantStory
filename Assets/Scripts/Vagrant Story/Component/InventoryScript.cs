@@ -81,6 +81,7 @@ namespace VagrantStory.Component
     }
 
 
+#if UNITY_EDITOR
     [CustomEditor(typeof(InventoryScript))]
     public class InventoryScriptEditor : Editor
     {
@@ -95,4 +96,5 @@ namespace VagrantStory.Component
             }
         }
     }
+#endif
 }

@@ -29,7 +29,7 @@ CapsuleCollider:
   m_Radius: 0.8
   m_Height: 4.66
   m_Direction: 1
-  m_Center: {x: 0, y: -0.58, z: 0}
+  m_Center: {x: 0, y: -0.6, z: 0}
 --- !u!114 &172722175356555588
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +77,7 @@ MonoBehaviour:
   LeftArmStatus: 0
   LegsStatus: 0
   Inventory: []
---- !u!114 &-9029808908477776541
+--- !u!114 &5689070366142685790
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
     BLUNTValue: 0
     EDGEDValue: 0
     PIERCINGValue: 0
---- !u!114 &5689070366142685790
+--- !u!114 &7852440710062441079
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,8 +148,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af2d61c12cc867b4a83a8088b74ef78b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  material: 3
-  category: 2
+  material: 1
+  category: 11
   dagger: 0
   sword: 0
   greatSword: 0
@@ -160,8 +160,8 @@ MonoBehaviour:
   heavyMace: 0
   polearm: 0
   crossbow: 0
-  shield: 0
-  gripType: 1
+  shield: 91
+  gripType: 0
   guard: 0
   grip: 0
   pole: 0
@@ -176,22 +176,22 @@ MonoBehaviour:
   PP: 100
   DP: 100
   statistics:
-    STRValue: 3
-    INTValue: 2
-    AGIValue: -2
-    HUMANValue: -1
-    BEASTValue: -1
-    UNDEADValue: 2
-    PHANTOMValue: -1
-    DRAGONValue: -1
-    EVILValue: -5
-    PHYSICALValue: 8
-    AIRValue: -5
-    FIREValue: -5
-    EARTHValue: 3
-    WATERValue: 3
-    LIGHTValue: -2
-    DARKValue: -2
+    STRValue: 10
+    INTValue: 11
+    AGIValue: -1
+    HUMANValue: 0
+    BEASTValue: 0
+    UNDEADValue: 0
+    PHANTOMValue: 0
+    DRAGONValue: 0
+    EVILValue: 0
+    PHYSICALValue: 6
+    AIRValue: -1
+    FIREValue: 13
+    EARTHValue: 7
+    WATERValue: -7
+    LIGHTValue: -9
+    DARKValue: -9
     BLUNTValue: 0
     EDGEDValue: 0
     PIERCINGValue: 0

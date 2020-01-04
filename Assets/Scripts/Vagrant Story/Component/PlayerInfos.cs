@@ -1,6 +1,7 @@
 ﻿using MyBox;
 using System;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using VagrantStory.Component;
 using VagrantStory.Core;
@@ -63,6 +64,11 @@ namespace VagrantStory.Component
         private Animator animator;
         private CouteauSuisse _weaponManager;
         private CouteauSuisse _shieldManager;
+
+
+
+        private GameObject _combatSphere; 
+
         // Start is called before the first frame update
         public void Start()
         {
@@ -106,15 +112,49 @@ namespace VagrantStory.Component
                     BattleModeOff();
                 }
             }
+
+            if (Input.GetButtonDown("Action"))
+            {
+                if (BattleMode)
+                {
+                    CombatSphere();
+                }
+            }
+
+        }
+
+        void CombatSphere()
+        {
+            // Draw a yellow sphere at the transform's position
+            if (Input.GetButtonDown("Action"))
+            {
+                if(_combatSphere != null)
+                {
+                    Destroy(_combatSphere);
+                }
+
+                float range = 6f; // sword range
+                string spherePath = "Prefabs/CombatSphere";
+                _combatSphere = Instantiate(Resources.Load(spherePath), transform) as GameObject;
+                _combatSphere.transform.localScale = Vector3.one*range*2;
+            }
         }
 
         public void BattleModeOn()
         {
-            weaponGO = MainHand.GameObject;
-            weaponGO.transform.parent = WeaponRootTransfrom;
-            weaponGO.transform.localPosition = Vector3.zero;
-            weaponGO.transform.localRotation = Quaternion.Euler(0, 0, 0);
-            weaponGO.transform.localScale = Vector3.one;
+            if (MainHand != null)
+            {
+                weaponGO = MainHand.GameObject;
+                weaponGO.transform.parent = WeaponRootTransfrom;
+                weaponGO.transform.localPosition = Vector3.zero;
+                weaponGO.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                weaponGO.transform.localScale = Vector3.one;
+
+                animator.SetInteger("Weapon Type", (int)MainHand.blade.bladeType);
+                animator.SetLayerWeight(0, 0f);
+                animator.SetLayerWeight((int)MainHand.blade.bladeType, 1f);
+            }
+                
             if (OffHand != null)
             {
                 shieldGO = OffHand.GameObject;
@@ -123,9 +163,6 @@ namespace VagrantStory.Component
                 shieldGO.transform.localRotation = Quaternion.Euler(0, 0, 0);
                 shieldGO.transform.localScale = Vector3.one;
             }
-            animator.SetInteger("Weapon Type", (int)MainHand.blade.bladeType);
-            animator.SetLayerWeight(0, 0f);
-            animator.SetLayerWeight((int)MainHand.blade.bladeType, 1f);
 
         }
 
@@ -136,6 +173,10 @@ namespace VagrantStory.Component
             animator.SetInteger("Weapon Type", 0);
             animator.SetLayerWeight(0, 1f);
             animator.SetLayerWeight((int)MainHand.blade.bladeType, 0f);
+            if (_combatSphere != null)
+            {
+                Destroy(_combatSphere);
+            }
         }
 
     }
