@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
-
+using VagrantStory.Component;
+using VagrantStory.Items;
 
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Rigidbody))]
@@ -19,12 +20,14 @@ public class AshleyController : MonoBehaviour
     private bool _jumping = false;
     private Animator _animator;
     private Rigidbody _rigidBody;
+    private PlayerInfos _infos;
 
     // Start is called before the first frame update
     void Start()
     {
         _animator = GetComponent<Animator>();
         _rigidBody = GetComponent<Rigidbody>();
+        _infos = GetComponent<PlayerInfos>();
     }
     void Update()
     {
@@ -44,6 +47,9 @@ public class AshleyController : MonoBehaviour
         {
             _animator.SetTrigger("Attack");
         }
+
+        Weapon weapon = _infos.MainHand;
+
 
         Vector3 sol = transform.position - new Vector3(0, 1.54f);
         Vector3 pieds = transform.position - new Vector3(0, 1.05f);

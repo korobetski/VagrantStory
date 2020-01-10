@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Assets/Resources/Textures/00.psd
+Assets/Resources/Textures/00.psd.meta

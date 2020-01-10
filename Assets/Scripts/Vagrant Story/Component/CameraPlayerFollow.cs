@@ -20,9 +20,9 @@ public class CameraPlayerFollow : MonoBehaviour
 
 
 
-        if (Input.GetButtonDown("Rotate"))
+        if (Input.GetButton("Rotate"))
         {
-            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 15, 0);
+            transform.rotation = Quaternion.Euler(0, transform.rotation.eulerAngles.y + 5, 0);
         }
     }
 }

@@ -74,7 +74,6 @@ namespace VagrantStory.Items
             }
 
         }
-
     }
 
 }
