@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.AI;
 using VagrantStory.Component;
 using VagrantStory.Items;
 
@@ -8,6 +9,7 @@ using VagrantStory.Items;
 public class AshleyController : MonoBehaviour
 {
     public float jumpSpeed = 20f;
+    public GameObject target;
 
 
     protected Vector2 m_Movement;
@@ -21,6 +23,13 @@ public class AshleyController : MonoBehaviour
     private Animator _animator;
     private Rigidbody _rigidBody;
     private PlayerInfos _infos;
+    private NavMeshAgent _agent;
+
+
+    private bool _attacking = false;
+    private GameObject _target;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +37,8 @@ public class AshleyController : MonoBehaviour
         _animator = GetComponent<Animator>();
         _rigidBody = GetComponent<Rigidbody>();
         _infos = GetComponent<PlayerInfos>();
+        _agent = GetComponent<NavMeshAgent>();
+        _agent.updatePosition = false;
     }
     void Update()
     {
@@ -40,12 +51,49 @@ public class AshleyController : MonoBehaviour
 
         m_Jump = Input.GetButton("Jump");
 
-
         _animator.SetFloat("Movement", m_Movement.magnitude);
 
         if (Input.GetButtonDown("Fire1"))
         {
-            _animator.SetTrigger("Attack");
+            _animator.Play("Idle"); // force idle pose
+            if (target != null)
+            {
+                _attacking = true;
+                _target = target;
+                Vector3 targetDir = -(transform.position - target.transform.position).normalized;
+                _rigidBody.MoveRotation(Quaternion.LookRotation(targetDir));
+
+
+                float targetDistance = Vector3.Distance(transform.position, target.transform.position);
+                float realWeaponRange = _infos.MainHand.blade.range * 0.75f;
+                Debug.Log(string.Concat("targetDistance : ",targetDistance, "  | weapon range : ", realWeaponRange));
+
+                if (targetDistance > realWeaponRange)
+                {
+                    _agent.updatePosition = true;
+                    _agent.SetDestination(target.transform.position);
+                }
+            }
+        }
+
+        if (_attacking)
+        {
+            _animator.SetFloat("Movement", _agent.velocity.magnitude);
+            float targetDistance = Vector3.Distance(transform.position, _target.transform.position);
+            float realWeaponRange = _infos.MainHand.blade.range * 0.9f;
+            if (targetDistance <= realWeaponRange)
+            {
+                _agent.updatePosition = false;
+                _attacking = false;
+                NavMeshAgent autoMove = GetComponent<NavMeshAgent>();
+                autoMove.isStopped = true;
+                _animator.SetTrigger("Attack");
+            }
+        }
+
+        if (target != null)
+        {
+            Debug.DrawRay(transform.position, -(transform.position-target.transform.position), Color.red);
         }
 
         Weapon weapon = _infos.MainHand;
@@ -187,6 +235,7 @@ public class AshleyController : MonoBehaviour
         if (_animator.GetBool("Climbing") == false)
         {
             _rigidBody.MovePosition(transform.position + new Vector3(m_Movement.x, step, m_Movement.y) * 6 * Time.fixedDeltaTime);
+            //_agent.Move(transform.position + new Vector3(m_Movement.x, step, m_Movement.y) * 6 * Time.fixedDeltaTime);
             if (m_Movement.x != 0 || m_Movement.y != 0)
             {
                 _rigidBody.MoveRotation(Quaternion.LookRotation(localMovementDirection));

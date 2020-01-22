@@ -4,15 +4,15 @@
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.2d.tilemap": "1.0.0",
     "com.unity.ads": "2.0.8",
-    "com.unity.analytics": "3.3.2",
+    "com.unity.analytics": "3.3.4",
     "com.unity.collab-proxy": "1.2.16",
     "com.unity.ide.rider": "1.1.4",
     "com.unity.ide.vscode": "1.1.3",
     "com.unity.postprocessing": "2.2.2",
     "com.unity.purchasing": "2.0.6",
-    "com.unity.test-framework": "1.1.3",
+    "com.unity.test-framework": "1.1.9",
     "com.unity.textmeshpro": "2.0.1",
-    "com.unity.timeline": "1.2.6",
+    "com.unity.timeline": "1.2.9",
     "com.unity.ugui": "1.0.0",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
@@ -49,7 +49,7 @@
   "lock": {
     "com.mybox": {
       "revision": "HEAD",
-      "hash": "a45e85e91c44213e4f64eb61006f5a6241786212"
+      "hash": "ce25fa174a05eea8f88cd83972f65f744bb4c6e4"
     }
   }
 }
